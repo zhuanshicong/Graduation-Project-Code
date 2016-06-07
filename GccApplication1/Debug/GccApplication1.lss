@@ -1,0 +1,3143 @@
+
+GccApplication1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         0000003c  00800100  000013c0  00001454  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000013c0  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000416  0080013c  0080013c  00001490  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00001490  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000014c0  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000118  00000000  00000000  00001500  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00002534  00000000  00000000  00001618  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 0000030c  00000000  00000000  00003b4c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000010e2  00000000  00000000  00003e58  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000420  00000000  00000000  00004f3c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000511  00000000  00000000  0000535c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000017c0  00000000  00000000  0000586d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000108  00000000  00000000  0000702d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	68 c0       	rjmp	.+208    	; 0xd2 <__ctors_end>
+       2:	00 00       	nop
+       4:	84 c0       	rjmp	.+264    	; 0x10e <__bad_interrupt>
+       6:	00 00       	nop
+       8:	82 c0       	rjmp	.+260    	; 0x10e <__bad_interrupt>
+       a:	00 00       	nop
+       c:	80 c0       	rjmp	.+256    	; 0x10e <__bad_interrupt>
+       e:	00 00       	nop
+      10:	7e c0       	rjmp	.+252    	; 0x10e <__bad_interrupt>
+      12:	00 00       	nop
+      14:	7c c0       	rjmp	.+248    	; 0x10e <__bad_interrupt>
+      16:	00 00       	nop
+      18:	7a c0       	rjmp	.+244    	; 0x10e <__bad_interrupt>
+      1a:	00 00       	nop
+      1c:	75 c6       	rjmp	.+3306   	; 0xd08 <__vector_7>
+      1e:	00 00       	nop
+      20:	76 c0       	rjmp	.+236    	; 0x10e <__bad_interrupt>
+      22:	00 00       	nop
+      24:	74 c0       	rjmp	.+232    	; 0x10e <__bad_interrupt>
+      26:	00 00       	nop
+      28:	72 c0       	rjmp	.+228    	; 0x10e <__bad_interrupt>
+      2a:	00 00       	nop
+      2c:	70 c0       	rjmp	.+224    	; 0x10e <__bad_interrupt>
+      2e:	00 00       	nop
+      30:	6e c0       	rjmp	.+220    	; 0x10e <__bad_interrupt>
+      32:	00 00       	nop
+      34:	6c c0       	rjmp	.+216    	; 0x10e <__bad_interrupt>
+      36:	00 00       	nop
+      38:	be c6       	rjmp	.+3452   	; 0xdb6 <__vector_14>
+      3a:	00 00       	nop
+      3c:	68 c0       	rjmp	.+208    	; 0x10e <__bad_interrupt>
+      3e:	00 00       	nop
+      40:	66 c0       	rjmp	.+204    	; 0x10e <__bad_interrupt>
+      42:	00 00       	nop
+      44:	64 c0       	rjmp	.+200    	; 0x10e <__bad_interrupt>
+      46:	00 00       	nop
+      48:	62 c0       	rjmp	.+196    	; 0x10e <__bad_interrupt>
+      4a:	00 00       	nop
+      4c:	60 c0       	rjmp	.+192    	; 0x10e <__bad_interrupt>
+      4e:	00 00       	nop
+      50:	5e c0       	rjmp	.+188    	; 0x10e <__bad_interrupt>
+      52:	00 00       	nop
+      54:	5c c0       	rjmp	.+184    	; 0x10e <__bad_interrupt>
+      56:	00 00       	nop
+      58:	5a c0       	rjmp	.+180    	; 0x10e <__bad_interrupt>
+      5a:	00 00       	nop
+      5c:	58 c0       	rjmp	.+176    	; 0x10e <__bad_interrupt>
+      5e:	00 00       	nop
+      60:	56 c0       	rjmp	.+172    	; 0x10e <__bad_interrupt>
+      62:	00 00       	nop
+      64:	54 c0       	rjmp	.+168    	; 0x10e <__bad_interrupt>
+      66:	00 00       	nop
+      68:	52 c0       	rjmp	.+164    	; 0x10e <__bad_interrupt>
+      6a:	00 00       	nop
+      6c:	50 c0       	rjmp	.+160    	; 0x10e <__bad_interrupt>
+      6e:	00 00       	nop
+      70:	4e c0       	rjmp	.+156    	; 0x10e <__bad_interrupt>
+      72:	00 00       	nop
+      74:	4c c0       	rjmp	.+152    	; 0x10e <__bad_interrupt>
+      76:	00 00       	nop
+      78:	4a c0       	rjmp	.+148    	; 0x10e <__bad_interrupt>
+      7a:	00 00       	nop
+      7c:	48 c0       	rjmp	.+144    	; 0x10e <__bad_interrupt>
+      7e:	00 00       	nop
+      80:	46 c0       	rjmp	.+140    	; 0x10e <__bad_interrupt>
+      82:	00 00       	nop
+      84:	44 c0       	rjmp	.+136    	; 0x10e <__bad_interrupt>
+      86:	00 00       	nop
+      88:	42 c0       	rjmp	.+132    	; 0x10e <__bad_interrupt>
+      8a:	00 00       	nop
+      8c:	8f 04       	cpc	r8, r15
+      8e:	93 04       	cpc	r9, r3
+      90:	98 04       	cpc	r9, r8
+      92:	c2 04       	cpc	r12, r2
+      94:	c2 04       	cpc	r12, r2
+      96:	c2 04       	cpc	r12, r2
+      98:	c2 04       	cpc	r12, r2
+      9a:	c2 04       	cpc	r12, r2
+      9c:	c2 04       	cpc	r12, r2
+      9e:	c2 04       	cpc	r12, r2
+      a0:	c2 04       	cpc	r12, r2
+      a2:	c2 04       	cpc	r12, r2
+      a4:	c2 04       	cpc	r12, r2
+      a6:	c2 04       	cpc	r12, r2
+      a8:	c2 04       	cpc	r12, r2
+      aa:	c2 04       	cpc	r12, r2
+      ac:	c2 04       	cpc	r12, r2
+      ae:	c2 04       	cpc	r12, r2
+      b0:	c2 04       	cpc	r12, r2
+      b2:	c2 04       	cpc	r12, r2
+      b4:	c2 04       	cpc	r12, r2
+      b6:	c2 04       	cpc	r12, r2
+      b8:	c2 04       	cpc	r12, r2
+      ba:	9c 04       	cpc	r9, r12
+      bc:	a3 04       	cpc	r10, r3
+      be:	a7 04       	cpc	r10, r7
+      c0:	ab 04       	cpc	r10, r11
+      c2:	c2 04       	cpc	r12, r2
+      c4:	c2 04       	cpc	r12, r2
+      c6:	c2 04       	cpc	r12, r2
+      c8:	c2 04       	cpc	r12, r2
+      ca:	af 04       	cpc	r10, r15
+      cc:	b6 04       	cpc	r11, r6
+      ce:	ba 04       	cpc	r11, r10
+      d0:	be 04       	cpc	r11, r14
+
+000000d2 <__ctors_end>:
+      d2:	11 24       	eor	r1, r1
+      d4:	1f be       	out	0x3f, r1	; 63
+      d6:	cf ef       	ldi	r28, 0xFF	; 255
+      d8:	d0 e1       	ldi	r29, 0x10	; 16
+      da:	de bf       	out	0x3e, r29	; 62
+      dc:	cd bf       	out	0x3d, r28	; 61
+
+000000de <__do_copy_data>:
+      de:	11 e0       	ldi	r17, 0x01	; 1
+      e0:	a0 e0       	ldi	r26, 0x00	; 0
+      e2:	b1 e0       	ldi	r27, 0x01	; 1
+      e4:	e0 ec       	ldi	r30, 0xC0	; 192
+      e6:	f3 e1       	ldi	r31, 0x13	; 19
+      e8:	00 e0       	ldi	r16, 0x00	; 0
+      ea:	0b bf       	out	0x3b, r16	; 59
+      ec:	02 c0       	rjmp	.+4      	; 0xf2 <__do_copy_data+0x14>
+      ee:	07 90       	elpm	r0, Z+
+      f0:	0d 92       	st	X+, r0
+      f2:	ac 33       	cpi	r26, 0x3C	; 60
+      f4:	b1 07       	cpc	r27, r17
+      f6:	d9 f7       	brne	.-10     	; 0xee <__do_copy_data+0x10>
+
+000000f8 <__do_clear_bss>:
+      f8:	25 e0       	ldi	r18, 0x05	; 5
+      fa:	ac e3       	ldi	r26, 0x3C	; 60
+      fc:	b1 e0       	ldi	r27, 0x01	; 1
+      fe:	01 c0       	rjmp	.+2      	; 0x102 <.do_clear_bss_start>
+
+00000100 <.do_clear_bss_loop>:
+     100:	1d 92       	st	X+, r1
+
+00000102 <.do_clear_bss_start>:
+     102:	a2 35       	cpi	r26, 0x52	; 82
+     104:	b2 07       	cpc	r27, r18
+     106:	e1 f7       	brne	.-8      	; 0x100 <.do_clear_bss_loop>
+     108:	6a d6       	rcall	.+3284   	; 0xdde <main>
+     10a:	0c 94 de 09 	jmp	0x13bc	; 0x13bc <_exit>
+
+0000010e <__bad_interrupt>:
+     10e:	78 cf       	rjmp	.-272    	; 0x0 <__vectors>
+
+00000110 <busy>:
+  temp1=SD_SendCommand(SD_SEND_STATUS,0,0XFF);//发送CMD13，并将R2第一字节存入temp1
+  SD_Enable();
+  temp2=SPI_TransferByte(0xff);  //R2第二字节存入temp2
+  SD_Disable();
+  return temp2;
+}
+     110:	87 ee       	ldi	r24, 0xE7	; 231
+     112:	93 e0       	ldi	r25, 0x03	; 3
+     114:	01 97       	sbiw	r24, 0x01	; 1
+     116:	f1 f7       	brne	.-4      	; 0x114 <busy+0x4>
+     118:	00 c0       	rjmp	.+0      	; 0x11a <busy+0xa>
+     11a:	00 00       	nop
+     11c:	e5 e6       	ldi	r30, 0x65	; 101
+     11e:	f0 e0       	ldi	r31, 0x00	; 0
+     120:	80 81       	ld	r24, Z
+     122:	8b 7f       	andi	r24, 0xFB	; 251
+     124:	80 83       	st	Z, r24
+     126:	87 ee       	ldi	r24, 0xE7	; 231
+     128:	93 e0       	ldi	r25, 0x03	; 3
+     12a:	01 97       	sbiw	r24, 0x01	; 1
+     12c:	f1 f7       	brne	.-4      	; 0x12a <busy+0x1a>
+     12e:	00 c0       	rjmp	.+0      	; 0x130 <busy+0x20>
+     130:	00 00       	nop
+     132:	80 81       	ld	r24, Z
+     134:	88 60       	ori	r24, 0x08	; 8
+     136:	80 83       	st	Z, r24
+     138:	87 ee       	ldi	r24, 0xE7	; 231
+     13a:	93 e0       	ldi	r25, 0x03	; 3
+     13c:	01 97       	sbiw	r24, 0x01	; 1
+     13e:	f1 f7       	brne	.-4      	; 0x13c <busy+0x2c>
+     140:	00 c0       	rjmp	.+0      	; 0x142 <busy+0x32>
+     142:	00 00       	nop
+     144:	08 95       	ret
+
+00000146 <writecom>:
+     146:	cf 93       	push	r28
+     148:	c8 2f       	mov	r28, r24
+     14a:	e2 df       	rcall	.-60     	; 0x110 <busy>
+     14c:	87 ee       	ldi	r24, 0xE7	; 231
+     14e:	93 e0       	ldi	r25, 0x03	; 3
+     150:	01 97       	sbiw	r24, 0x01	; 1
+     152:	f1 f7       	brne	.-4      	; 0x150 <writecom+0xa>
+     154:	00 c0       	rjmp	.+0      	; 0x156 <writecom+0x10>
+     156:	00 00       	nop
+     158:	e5 e6       	ldi	r30, 0x65	; 101
+     15a:	f0 e0       	ldi	r31, 0x00	; 0
+     15c:	90 81       	ld	r25, Z
+     15e:	9b 7f       	andi	r25, 0xFB	; 251
+     160:	90 83       	st	Z, r25
+     162:	87 ee       	ldi	r24, 0xE7	; 231
+     164:	93 e0       	ldi	r25, 0x03	; 3
+     166:	01 97       	sbiw	r24, 0x01	; 1
+     168:	f1 f7       	brne	.-4      	; 0x166 <writecom+0x20>
+     16a:	00 c0       	rjmp	.+0      	; 0x16c <writecom+0x26>
+     16c:	00 00       	nop
+     16e:	90 81       	ld	r25, Z
+     170:	97 7f       	andi	r25, 0xF7	; 247
+     172:	90 83       	st	Z, r25
+     174:	87 ee       	ldi	r24, 0xE7	; 231
+     176:	93 e0       	ldi	r25, 0x03	; 3
+     178:	01 97       	sbiw	r24, 0x01	; 1
+     17a:	f1 f7       	brne	.-4      	; 0x178 <writecom+0x32>
+     17c:	00 c0       	rjmp	.+0      	; 0x17e <writecom+0x38>
+     17e:	00 00       	nop
+     180:	90 81       	ld	r25, Z
+     182:	90 61       	ori	r25, 0x10	; 16
+     184:	90 83       	st	Z, r25
+     186:	87 ee       	ldi	r24, 0xE7	; 231
+     188:	93 e0       	ldi	r25, 0x03	; 3
+     18a:	01 97       	sbiw	r24, 0x01	; 1
+     18c:	f1 f7       	brne	.-4      	; 0x18a <writecom+0x44>
+     18e:	00 c0       	rjmp	.+0      	; 0x190 <writecom+0x4a>
+     190:	00 00       	nop
+     192:	c2 bb       	out	0x12, r28	; 18
+     194:	87 ee       	ldi	r24, 0xE7	; 231
+     196:	93 e0       	ldi	r25, 0x03	; 3
+     198:	01 97       	sbiw	r24, 0x01	; 1
+     19a:	f1 f7       	brne	.-4      	; 0x198 <writecom+0x52>
+     19c:	00 c0       	rjmp	.+0      	; 0x19e <writecom+0x58>
+     19e:	00 00       	nop
+     1a0:	80 81       	ld	r24, Z
+     1a2:	8f 7e       	andi	r24, 0xEF	; 239
+     1a4:	80 83       	st	Z, r24
+     1a6:	87 ee       	ldi	r24, 0xE7	; 231
+     1a8:	93 e0       	ldi	r25, 0x03	; 3
+     1aa:	01 97       	sbiw	r24, 0x01	; 1
+     1ac:	f1 f7       	brne	.-4      	; 0x1aa <writecom+0x64>
+     1ae:	00 c0       	rjmp	.+0      	; 0x1b0 <writecom+0x6a>
+     1b0:	00 00       	nop
+     1b2:	cf 91       	pop	r28
+     1b4:	08 95       	ret
+
+000001b6 <LcdInit>:
+     1b6:	88 e3       	ldi	r24, 0x38	; 56
+     1b8:	c6 df       	rcall	.-116    	; 0x146 <writecom>
+     1ba:	8f ec       	ldi	r24, 0xCF	; 207
+     1bc:	97 e0       	ldi	r25, 0x07	; 7
+     1be:	01 97       	sbiw	r24, 0x01	; 1
+     1c0:	f1 f7       	brne	.-4      	; 0x1be <LcdInit+0x8>
+     1c2:	00 c0       	rjmp	.+0      	; 0x1c4 <LcdInit+0xe>
+     1c4:	00 00       	nop
+     1c6:	81 e0       	ldi	r24, 0x01	; 1
+     1c8:	be df       	rcall	.-132    	; 0x146 <writecom>
+     1ca:	8f e1       	ldi	r24, 0x1F	; 31
+     1cc:	9e e4       	ldi	r25, 0x4E	; 78
+     1ce:	01 97       	sbiw	r24, 0x01	; 1
+     1d0:	f1 f7       	brne	.-4      	; 0x1ce <LcdInit+0x18>
+     1d2:	00 c0       	rjmp	.+0      	; 0x1d4 <LcdInit+0x1e>
+     1d4:	00 00       	nop
+     1d6:	8f ec       	ldi	r24, 0xCF	; 207
+     1d8:	97 e0       	ldi	r25, 0x07	; 7
+     1da:	01 97       	sbiw	r24, 0x01	; 1
+     1dc:	f1 f7       	brne	.-4      	; 0x1da <LcdInit+0x24>
+     1de:	00 c0       	rjmp	.+0      	; 0x1e0 <LcdInit+0x2a>
+     1e0:	00 00       	nop
+     1e2:	8f ec       	ldi	r24, 0xCF	; 207
+     1e4:	97 e0       	ldi	r25, 0x07	; 7
+     1e6:	01 97       	sbiw	r24, 0x01	; 1
+     1e8:	f1 f7       	brne	.-4      	; 0x1e6 <LcdInit+0x30>
+     1ea:	00 c0       	rjmp	.+0      	; 0x1ec <LcdInit+0x36>
+     1ec:	00 00       	nop
+     1ee:	8f ec       	ldi	r24, 0xCF	; 207
+     1f0:	97 e0       	ldi	r25, 0x07	; 7
+     1f2:	01 97       	sbiw	r24, 0x01	; 1
+     1f4:	f1 f7       	brne	.-4      	; 0x1f2 <LcdInit+0x3c>
+     1f6:	00 c0       	rjmp	.+0      	; 0x1f8 <LcdInit+0x42>
+     1f8:	00 00       	nop
+     1fa:	8f ec       	ldi	r24, 0xCF	; 207
+     1fc:	97 e0       	ldi	r25, 0x07	; 7
+     1fe:	01 97       	sbiw	r24, 0x01	; 1
+     200:	f1 f7       	brne	.-4      	; 0x1fe <LcdInit+0x48>
+     202:	00 c0       	rjmp	.+0      	; 0x204 <LcdInit+0x4e>
+     204:	00 00       	nop
+     206:	8f ec       	ldi	r24, 0xCF	; 207
+     208:	97 e0       	ldi	r25, 0x07	; 7
+     20a:	01 97       	sbiw	r24, 0x01	; 1
+     20c:	f1 f7       	brne	.-4      	; 0x20a <LcdInit+0x54>
+     20e:	00 c0       	rjmp	.+0      	; 0x210 <LcdInit+0x5a>
+     210:	00 00       	nop
+     212:	8f ec       	ldi	r24, 0xCF	; 207
+     214:	97 e0       	ldi	r25, 0x07	; 7
+     216:	01 97       	sbiw	r24, 0x01	; 1
+     218:	f1 f7       	brne	.-4      	; 0x216 <LcdInit+0x60>
+     21a:	00 c0       	rjmp	.+0      	; 0x21c <LcdInit+0x66>
+     21c:	00 00       	nop
+     21e:	82 e0       	ldi	r24, 0x02	; 2
+     220:	92 df       	rcall	.-220    	; 0x146 <writecom>
+     222:	8f ec       	ldi	r24, 0xCF	; 207
+     224:	97 e0       	ldi	r25, 0x07	; 7
+     226:	01 97       	sbiw	r24, 0x01	; 1
+     228:	f1 f7       	brne	.-4      	; 0x226 <LcdInit+0x70>
+     22a:	00 c0       	rjmp	.+0      	; 0x22c <LcdInit+0x76>
+     22c:	00 00       	nop
+     22e:	86 e0       	ldi	r24, 0x06	; 6
+     230:	8a df       	rcall	.-236    	; 0x146 <writecom>
+     232:	8f ec       	ldi	r24, 0xCF	; 207
+     234:	97 e0       	ldi	r25, 0x07	; 7
+     236:	01 97       	sbiw	r24, 0x01	; 1
+     238:	f1 f7       	brne	.-4      	; 0x236 <LcdInit+0x80>
+     23a:	00 c0       	rjmp	.+0      	; 0x23c <LcdInit+0x86>
+     23c:	00 00       	nop
+     23e:	8c e0       	ldi	r24, 0x0C	; 12
+     240:	82 df       	rcall	.-252    	; 0x146 <writecom>
+     242:	8f ec       	ldi	r24, 0xCF	; 207
+     244:	97 e0       	ldi	r25, 0x07	; 7
+     246:	01 97       	sbiw	r24, 0x01	; 1
+     248:	f1 f7       	brne	.-4      	; 0x246 <LcdInit+0x90>
+     24a:	00 c0       	rjmp	.+0      	; 0x24c <LcdInit+0x96>
+     24c:	00 00       	nop
+     24e:	88 e3       	ldi	r24, 0x38	; 56
+     250:	7a df       	rcall	.-268    	; 0x146 <writecom>
+     252:	8f ec       	ldi	r24, 0xCF	; 207
+     254:	97 e0       	ldi	r25, 0x07	; 7
+     256:	01 97       	sbiw	r24, 0x01	; 1
+     258:	f1 f7       	brne	.-4      	; 0x256 <LcdInit+0xa0>
+     25a:	00 c0       	rjmp	.+0      	; 0x25c <LcdInit+0xa6>
+     25c:	00 00       	nop
+     25e:	08 95       	ret
+
+00000260 <WriteNum>:
+     260:	cf 93       	push	r28
+     262:	c4 2f       	mov	r28, r20
+     264:	81 30       	cpi	r24, 0x01	; 1
+     266:	19 f4       	brne	.+6      	; 0x26e <WriteNum+0xe>
+     268:	80 e8       	ldi	r24, 0x80	; 128
+     26a:	86 0f       	add	r24, r22
+     26c:	02 c0       	rjmp	.+4      	; 0x272 <WriteNum+0x12>
+     26e:	80 ec       	ldi	r24, 0xC0	; 192
+     270:	86 0f       	add	r24, r22
+     272:	69 df       	rcall	.-302    	; 0x146 <writecom>
+     274:	e5 e6       	ldi	r30, 0x65	; 101
+     276:	f0 e0       	ldi	r31, 0x00	; 0
+     278:	80 81       	ld	r24, Z
+     27a:	84 60       	ori	r24, 0x04	; 4
+     27c:	80 83       	st	Z, r24
+     27e:	87 ee       	ldi	r24, 0xE7	; 231
+     280:	93 e0       	ldi	r25, 0x03	; 3
+     282:	01 97       	sbiw	r24, 0x01	; 1
+     284:	f1 f7       	brne	.-4      	; 0x282 <WriteNum+0x22>
+     286:	00 c0       	rjmp	.+0      	; 0x288 <WriteNum+0x28>
+     288:	00 00       	nop
+     28a:	80 81       	ld	r24, Z
+     28c:	87 7f       	andi	r24, 0xF7	; 247
+     28e:	80 83       	st	Z, r24
+     290:	87 ee       	ldi	r24, 0xE7	; 231
+     292:	93 e0       	ldi	r25, 0x03	; 3
+     294:	01 97       	sbiw	r24, 0x01	; 1
+     296:	f1 f7       	brne	.-4      	; 0x294 <WriteNum+0x34>
+     298:	00 c0       	rjmp	.+0      	; 0x29a <WriteNum+0x3a>
+     29a:	00 00       	nop
+     29c:	c2 bb       	out	0x12, r28	; 18
+     29e:	87 ee       	ldi	r24, 0xE7	; 231
+     2a0:	93 e0       	ldi	r25, 0x03	; 3
+     2a2:	01 97       	sbiw	r24, 0x01	; 1
+     2a4:	f1 f7       	brne	.-4      	; 0x2a2 <WriteNum+0x42>
+     2a6:	00 c0       	rjmp	.+0      	; 0x2a8 <WriteNum+0x48>
+     2a8:	00 00       	nop
+     2aa:	80 81       	ld	r24, Z
+     2ac:	80 61       	ori	r24, 0x10	; 16
+     2ae:	80 83       	st	Z, r24
+     2b0:	87 ee       	ldi	r24, 0xE7	; 231
+     2b2:	93 e0       	ldi	r25, 0x03	; 3
+     2b4:	01 97       	sbiw	r24, 0x01	; 1
+     2b6:	f1 f7       	brne	.-4      	; 0x2b4 <WriteNum+0x54>
+     2b8:	00 c0       	rjmp	.+0      	; 0x2ba <WriteNum+0x5a>
+     2ba:	00 00       	nop
+     2bc:	80 81       	ld	r24, Z
+     2be:	8f 7e       	andi	r24, 0xEF	; 239
+     2c0:	80 83       	st	Z, r24
+     2c2:	87 ee       	ldi	r24, 0xE7	; 231
+     2c4:	93 e0       	ldi	r25, 0x03	; 3
+     2c6:	01 97       	sbiw	r24, 0x01	; 1
+     2c8:	f1 f7       	brne	.-4      	; 0x2c6 <WriteNum+0x66>
+     2ca:	00 c0       	rjmp	.+0      	; 0x2cc <WriteNum+0x6c>
+     2cc:	00 00       	nop
+     2ce:	cf 91       	pop	r28
+     2d0:	08 95       	ret
+
+000002d2 <WriteChar>:
+     2d2:	1f 93       	push	r17
+     2d4:	cf 93       	push	r28
+     2d6:	df 93       	push	r29
+     2d8:	14 2f       	mov	r17, r20
+     2da:	e9 01       	movw	r28, r18
+     2dc:	81 30       	cpi	r24, 0x01	; 1
+     2de:	19 f4       	brne	.+6      	; 0x2e6 <WriteChar+0x14>
+     2e0:	80 e8       	ldi	r24, 0x80	; 128
+     2e2:	86 0f       	add	r24, r22
+     2e4:	02 c0       	rjmp	.+4      	; 0x2ea <WriteChar+0x18>
+     2e6:	80 ec       	ldi	r24, 0xC0	; 192
+     2e8:	86 0f       	add	r24, r22
+     2ea:	2d df       	rcall	.-422    	; 0x146 <writecom>
+     2ec:	e5 e6       	ldi	r30, 0x65	; 101
+     2ee:	f0 e0       	ldi	r31, 0x00	; 0
+     2f0:	80 81       	ld	r24, Z
+     2f2:	84 60       	ori	r24, 0x04	; 4
+     2f4:	80 83       	st	Z, r24
+     2f6:	87 ee       	ldi	r24, 0xE7	; 231
+     2f8:	93 e0       	ldi	r25, 0x03	; 3
+     2fa:	01 97       	sbiw	r24, 0x01	; 1
+     2fc:	f1 f7       	brne	.-4      	; 0x2fa <WriteChar+0x28>
+     2fe:	00 c0       	rjmp	.+0      	; 0x300 <WriteChar+0x2e>
+     300:	00 00       	nop
+     302:	80 81       	ld	r24, Z
+     304:	87 7f       	andi	r24, 0xF7	; 247
+     306:	80 83       	st	Z, r24
+     308:	a7 ee       	ldi	r26, 0xE7	; 231
+     30a:	b3 e0       	ldi	r27, 0x03	; 3
+     30c:	11 97       	sbiw	r26, 0x01	; 1
+     30e:	f1 f7       	brne	.-4      	; 0x30c <WriteChar+0x3a>
+     310:	00 c0       	rjmp	.+0      	; 0x312 <WriteChar+0x40>
+     312:	00 00       	nop
+     314:	41 2f       	mov	r20, r17
+     316:	11 23       	and	r17, r17
+     318:	11 f1       	breq	.+68     	; 0x35e <WriteChar+0x8c>
+     31a:	89 91       	ld	r24, Y+
+     31c:	a7 ee       	ldi	r26, 0xE7	; 231
+     31e:	b3 e0       	ldi	r27, 0x03	; 3
+     320:	11 97       	sbiw	r26, 0x01	; 1
+     322:	f1 f7       	brne	.-4      	; 0x320 <WriteChar+0x4e>
+     324:	00 c0       	rjmp	.+0      	; 0x326 <WriteChar+0x54>
+     326:	00 00       	nop
+     328:	82 bb       	out	0x12, r24	; 18
+     32a:	87 ee       	ldi	r24, 0xE7	; 231
+     32c:	93 e0       	ldi	r25, 0x03	; 3
+     32e:	01 97       	sbiw	r24, 0x01	; 1
+     330:	f1 f7       	brne	.-4      	; 0x32e <WriteChar+0x5c>
+     332:	00 c0       	rjmp	.+0      	; 0x334 <WriteChar+0x62>
+     334:	00 00       	nop
+     336:	80 81       	ld	r24, Z
+     338:	80 61       	ori	r24, 0x10	; 16
+     33a:	80 83       	st	Z, r24
+     33c:	a7 ee       	ldi	r26, 0xE7	; 231
+     33e:	b3 e0       	ldi	r27, 0x03	; 3
+     340:	11 97       	sbiw	r26, 0x01	; 1
+     342:	f1 f7       	brne	.-4      	; 0x340 <WriteChar+0x6e>
+     344:	00 c0       	rjmp	.+0      	; 0x346 <WriteChar+0x74>
+     346:	00 00       	nop
+     348:	80 81       	ld	r24, Z
+     34a:	8f 7e       	andi	r24, 0xEF	; 239
+     34c:	80 83       	st	Z, r24
+     34e:	87 ee       	ldi	r24, 0xE7	; 231
+     350:	93 e0       	ldi	r25, 0x03	; 3
+     352:	01 97       	sbiw	r24, 0x01	; 1
+     354:	f1 f7       	brne	.-4      	; 0x352 <WriteChar+0x80>
+     356:	00 c0       	rjmp	.+0      	; 0x358 <WriteChar+0x86>
+     358:	00 00       	nop
+     35a:	41 50       	subi	r20, 0x01	; 1
+     35c:	f1 f6       	brne	.-68     	; 0x31a <WriteChar+0x48>
+     35e:	df 91       	pop	r29
+     360:	cf 91       	pop	r28
+     362:	1f 91       	pop	r17
+     364:	08 95       	ret
+
+00000366 <SD_Port_Init>:
+     366:	87 e4       	ldi	r24, 0x47	; 71
+     368:	87 bb       	out	0x17, r24	; 23
+     36a:	bb 98       	cbi	0x17, 3	; 23
+     36c:	c1 9a       	sbi	0x18, 1	; 24
+     36e:	c6 9a       	sbi	0x18, 6	; 24
+     370:	c0 9a       	sbi	0x18, 0	; 24
+     372:	83 e5       	ldi	r24, 0x53	; 83
+     374:	8d b9       	out	0x0d, r24	; 13
+     376:	1e b8       	out	0x0e, r1	; 14
+     378:	08 95       	ret
+
+0000037a <DHT_Init>:
+     37a:	d0 9a       	sbi	0x1a, 0	; 26
+     37c:	d8 98       	cbi	0x1b, 0	; 27
+     37e:	8f e3       	ldi	r24, 0x3F	; 63
+     380:	9c e9       	ldi	r25, 0x9C	; 156
+     382:	01 97       	sbiw	r24, 0x01	; 1
+     384:	f1 f7       	brne	.-4      	; 0x382 <DHT_Init+0x8>
+     386:	00 c0       	rjmp	.+0      	; 0x388 <DHT_Init+0xe>
+     388:	00 00       	nop
+     38a:	d8 9a       	sbi	0x1b, 0	; 27
+     38c:	90 e5       	ldi	r25, 0x50	; 80
+     38e:	9a 95       	dec	r25
+     390:	f1 f7       	brne	.-4      	; 0x38e <DHT_Init+0x14>
+     392:	d0 98       	cbi	0x1a, 0	; 26
+     394:	c8 99       	sbic	0x19, 0	; 25
+     396:	fe cf       	rjmp	.-4      	; 0x394 <DHT_Init+0x1a>
+     398:	08 95       	ret
+
+0000039a <Ext_Int_Init>:
+     39a:	16 98       	cbi	0x02, 6	; 2
+     39c:	1e 98       	cbi	0x03, 6	; 3
+     39e:	80 e3       	ldi	r24, 0x30	; 48
+     3a0:	8a bf       	out	0x3a, r24	; 58
+     3a2:	89 b7       	in	r24, 0x39	; 57
+     3a4:	80 64       	ori	r24, 0x40	; 64
+     3a6:	89 bf       	out	0x39, r24	; 57
+     3a8:	08 95       	ret
+
+000003aa <TC1_Init>:
+     3aa:	1f bc       	out	0x2f, r1	; 47
+     3ac:	85 e0       	ldi	r24, 0x05	; 5
+     3ae:	8e bd       	out	0x2e, r24	; 46
+     3b0:	10 92 7a 00 	sts	0x007A, r1
+     3b4:	1d bc       	out	0x2d, r1	; 45
+     3b6:	1c bc       	out	0x2c, r1	; 44
+     3b8:	87 b7       	in	r24, 0x37	; 55
+     3ba:	84 60       	ori	r24, 0x04	; 4
+     3bc:	87 bf       	out	0x37, r24	; 55
+     3be:	08 95       	ret
+
+000003c0 <ADC_Init>:
+     3c0:	80 e4       	ldi	r24, 0x40	; 64
+     3c2:	87 b9       	out	0x07, r24	; 7
+     3c4:	87 e8       	ldi	r24, 0x87	; 135
+     3c6:	86 b9       	out	0x06, r24	; 6
+     3c8:	08 95       	ret
+
+000003ca <SPI_TransferByte>:
+     3ca:	8f b9       	out	0x0f, r24	; 15
+     3cc:	77 9b       	sbis	0x0e, 7	; 14
+     3ce:	fe cf       	rjmp	.-4      	; 0x3cc <SPI_TransferByte+0x2>
+     3d0:	8f b1       	in	r24, 0x0f	; 15
+     3d2:	08 95       	ret
+
+000003d4 <SD_SendCommand>:
+     3d4:	ff 92       	push	r15
+     3d6:	0f 93       	push	r16
+     3d8:	1f 93       	push	r17
+     3da:	cf 93       	push	r28
+     3dc:	df 93       	push	r29
+     3de:	d4 2f       	mov	r29, r20
+     3e0:	15 2f       	mov	r17, r21
+     3e2:	06 2f       	mov	r16, r22
+     3e4:	f7 2e       	mov	r15, r23
+     3e6:	c2 2f       	mov	r28, r18
+     3e8:	c6 98       	cbi	0x18, 6	; 24
+     3ea:	80 64       	ori	r24, 0x40	; 64
+     3ec:	ee df       	rcall	.-36     	; 0x3ca <SPI_TransferByte>
+     3ee:	8f 2d       	mov	r24, r15
+     3f0:	ec df       	rcall	.-40     	; 0x3ca <SPI_TransferByte>
+     3f2:	80 2f       	mov	r24, r16
+     3f4:	ea df       	rcall	.-44     	; 0x3ca <SPI_TransferByte>
+     3f6:	81 2f       	mov	r24, r17
+     3f8:	e8 df       	rcall	.-48     	; 0x3ca <SPI_TransferByte>
+     3fa:	8d 2f       	mov	r24, r29
+     3fc:	e6 df       	rcall	.-52     	; 0x3ca <SPI_TransferByte>
+     3fe:	8c 2f       	mov	r24, r28
+     400:	e4 df       	rcall	.-56     	; 0x3ca <SPI_TransferByte>
+     402:	ca ec       	ldi	r28, 0xCA	; 202
+     404:	02 c0       	rjmp	.+4      	; 0x40a <SD_SendCommand+0x36>
+     406:	c1 50       	subi	r28, 0x01	; 1
+     408:	21 f0       	breq	.+8      	; 0x412 <SD_SendCommand+0x3e>
+     40a:	8f ef       	ldi	r24, 0xFF	; 255
+     40c:	de df       	rcall	.-68     	; 0x3ca <SPI_TransferByte>
+     40e:	8f 3f       	cpi	r24, 0xFF	; 255
+     410:	d1 f3       	breq	.-12     	; 0x406 <SD_SendCommand+0x32>
+     412:	c6 9a       	sbi	0x18, 6	; 24
+     414:	df 91       	pop	r29
+     416:	cf 91       	pop	r28
+     418:	1f 91       	pop	r17
+     41a:	0f 91       	pop	r16
+     41c:	ff 90       	pop	r15
+     41e:	08 95       	ret
+
+00000420 <SD_Check_If_SDHC>:
+     420:	cf 93       	push	r28
+     422:	2f ef       	ldi	r18, 0xFF	; 255
+     424:	40 e0       	ldi	r20, 0x00	; 0
+     426:	50 e0       	ldi	r21, 0x00	; 0
+     428:	ba 01       	movw	r22, r20
+     42a:	8a e3       	ldi	r24, 0x3A	; 58
+     42c:	d3 df       	rcall	.-90     	; 0x3d4 <SD_SendCommand>
+     42e:	8f ef       	ldi	r24, 0xFF	; 255
+     430:	cc df       	rcall	.-104    	; 0x3ca <SPI_TransferByte>
+     432:	c8 2f       	mov	r28, r24
+     434:	8f ef       	ldi	r24, 0xFF	; 255
+     436:	c9 df       	rcall	.-110    	; 0x3ca <SPI_TransferByte>
+     438:	8f ef       	ldi	r24, 0xFF	; 255
+     43a:	c7 df       	rcall	.-114    	; 0x3ca <SPI_TransferByte>
+     43c:	8f ef       	ldi	r24, 0xFF	; 255
+     43e:	c5 df       	rcall	.-118    	; 0x3ca <SPI_TransferByte>
+     440:	c6 fd       	sbrc	r28, 6
+     442:	03 c0       	rjmp	.+6      	; 0x44a <SD_Check_If_SDHC+0x2a>
+     444:	10 92 51 03 	sts	0x0351, r1
+     448:	03 c0       	rjmp	.+6      	; 0x450 <SD_Check_If_SDHC+0x30>
+     44a:	81 e0       	ldi	r24, 0x01	; 1
+     44c:	80 93 51 03 	sts	0x0351, r24
+     450:	cf 91       	pop	r28
+     452:	08 95       	ret
+
+00000454 <SD_reset>:
+     454:	cf 93       	push	r28
+     456:	c6 9a       	sbi	0x18, 6	; 24
+     458:	c8 ec       	ldi	r28, 0xC8	; 200
+     45a:	8f ef       	ldi	r24, 0xFF	; 255
+     45c:	b6 df       	rcall	.-148    	; 0x3ca <SPI_TransferByte>
+     45e:	c1 50       	subi	r28, 0x01	; 1
+     460:	e1 f7       	brne	.-8      	; 0x45a <SD_reset+0x6>
+     462:	25 e9       	ldi	r18, 0x95	; 149
+     464:	40 e0       	ldi	r20, 0x00	; 0
+     466:	50 e0       	ldi	r21, 0x00	; 0
+     468:	ba 01       	movw	r22, r20
+     46a:	80 e0       	ldi	r24, 0x00	; 0
+     46c:	b3 df       	rcall	.-154    	; 0x3d4 <SD_SendCommand>
+     46e:	c8 2f       	mov	r28, r24
+     470:	8f ef       	ldi	r24, 0xFF	; 255
+     472:	ab df       	rcall	.-170    	; 0x3ca <SPI_TransferByte>
+     474:	8c 2f       	mov	r24, r28
+     476:	cf 91       	pop	r28
+     478:	08 95       	ret
+
+0000047a <SD_Init>:
+     47a:	cf 92       	push	r12
+     47c:	df 92       	push	r13
+     47e:	ef 92       	push	r14
+     480:	ff 92       	push	r15
+     482:	1f 93       	push	r17
+     484:	cf 93       	push	r28
+     486:	df 93       	push	r29
+     488:	27 e8       	ldi	r18, 0x87	; 135
+     48a:	4a ea       	ldi	r20, 0xAA	; 170
+     48c:	51 e0       	ldi	r21, 0x01	; 1
+     48e:	60 e0       	ldi	r22, 0x00	; 0
+     490:	70 e0       	ldi	r23, 0x00	; 0
+     492:	88 e0       	ldi	r24, 0x08	; 8
+     494:	9f df       	rcall	.-194    	; 0x3d4 <SD_SendCommand>
+     496:	18 2f       	mov	r17, r24
+     498:	c4 e1       	ldi	r28, 0x14	; 20
+     49a:	d0 e0       	ldi	r29, 0x00	; 0
+     49c:	8f ef       	ldi	r24, 0xFF	; 255
+     49e:	95 df       	rcall	.-214    	; 0x3ca <SPI_TransferByte>
+     4a0:	21 97       	sbiw	r28, 0x01	; 1
+     4a2:	e1 f7       	brne	.-8      	; 0x49c <SD_Init+0x22>
+     4a4:	bd df       	rcall	.-134    	; 0x420 <SD_Check_If_SDHC>
+     4a6:	80 91 51 03 	lds	r24, 0x0351
+     4aa:	81 30       	cpi	r24, 0x01	; 1
+     4ac:	31 f4       	brne	.+12     	; 0x4ba <SD_Init+0x40>
+     4ae:	c1 2c       	mov	r12, r1
+     4b0:	d1 2c       	mov	r13, r1
+     4b2:	76 01       	movw	r14, r12
+     4b4:	68 94       	set
+     4b6:	f6 f8       	bld	r15, 6
+     4b8:	03 c0       	rjmp	.+6      	; 0x4c0 <SD_Init+0x46>
+     4ba:	c1 2c       	mov	r12, r1
+     4bc:	d1 2c       	mov	r13, r1
+     4be:	76 01       	movw	r14, r12
+     4c0:	11 11       	cpse	r17, r1
+     4c2:	12 c0       	rjmp	.+36     	; 0x4e8 <SD_Init+0x6e>
+     4c4:	20 c0       	rjmp	.+64     	; 0x506 <SD_Init+0x8c>
+     4c6:	2f ef       	ldi	r18, 0xFF	; 255
+     4c8:	40 e0       	ldi	r20, 0x00	; 0
+     4ca:	50 e0       	ldi	r21, 0x00	; 0
+     4cc:	ba 01       	movw	r22, r20
+     4ce:	87 e3       	ldi	r24, 0x37	; 55
+     4d0:	81 df       	rcall	.-254    	; 0x3d4 <SD_SendCommand>
+     4d2:	2f ef       	ldi	r18, 0xFF	; 255
+     4d4:	b7 01       	movw	r22, r14
+     4d6:	a6 01       	movw	r20, r12
+     4d8:	89 e2       	ldi	r24, 0x29	; 41
+     4da:	7c df       	rcall	.-264    	; 0x3d4 <SD_SendCommand>
+     4dc:	18 2f       	mov	r17, r24
+     4de:	21 97       	sbiw	r28, 0x01	; 1
+     4e0:	91 f0       	breq	.+36     	; 0x506 <SD_Init+0x8c>
+     4e2:	11 11       	cpse	r17, r1
+     4e4:	f0 cf       	rjmp	.-32     	; 0x4c6 <SD_Init+0x4c>
+     4e6:	0f c0       	rjmp	.+30     	; 0x506 <SD_Init+0x8c>
+     4e8:	2f ef       	ldi	r18, 0xFF	; 255
+     4ea:	40 e0       	ldi	r20, 0x00	; 0
+     4ec:	50 e0       	ldi	r21, 0x00	; 0
+     4ee:	ba 01       	movw	r22, r20
+     4f0:	87 e3       	ldi	r24, 0x37	; 55
+     4f2:	70 df       	rcall	.-288    	; 0x3d4 <SD_SendCommand>
+     4f4:	2f ef       	ldi	r18, 0xFF	; 255
+     4f6:	b7 01       	movw	r22, r14
+     4f8:	a6 01       	movw	r20, r12
+     4fa:	89 e2       	ldi	r24, 0x29	; 41
+     4fc:	6b df       	rcall	.-298    	; 0x3d4 <SD_SendCommand>
+     4fe:	18 2f       	mov	r17, r24
+     500:	c8 ec       	ldi	r28, 0xC8	; 200
+     502:	d0 e0       	ldi	r29, 0x00	; 0
+     504:	ee cf       	rjmp	.-36     	; 0x4e2 <SD_Init+0x68>
+     506:	8f ef       	ldi	r24, 0xFF	; 255
+     508:	60 df       	rcall	.-320    	; 0x3ca <SPI_TransferByte>
+     50a:	15 bb       	out	0x15, r17	; 21
+     50c:	81 2f       	mov	r24, r17
+     50e:	df 91       	pop	r29
+     510:	cf 91       	pop	r28
+     512:	1f 91       	pop	r17
+     514:	ff 90       	pop	r15
+     516:	ef 90       	pop	r14
+     518:	df 90       	pop	r13
+     51a:	cf 90       	pop	r12
+     51c:	08 95       	ret
+
+0000051e <SD_Set_data_size>:
+     51e:	cf 93       	push	r28
+     520:	2f ef       	ldi	r18, 0xFF	; 255
+     522:	40 e0       	ldi	r20, 0x00	; 0
+     524:	52 e0       	ldi	r21, 0x02	; 2
+     526:	60 e0       	ldi	r22, 0x00	; 0
+     528:	70 e0       	ldi	r23, 0x00	; 0
+     52a:	80 e1       	ldi	r24, 0x10	; 16
+     52c:	53 df       	rcall	.-346    	; 0x3d4 <SD_SendCommand>
+     52e:	c8 2f       	mov	r28, r24
+     530:	8f ef       	ldi	r24, 0xFF	; 255
+     532:	4b df       	rcall	.-362    	; 0x3ca <SPI_TransferByte>
+     534:	8c 2f       	mov	r24, r28
+     536:	cf 91       	pop	r28
+     538:	08 95       	ret
+
+0000053a <SD_Set_CRC>:
+     53a:	cf 93       	push	r28
+     53c:	25 e9       	ldi	r18, 0x95	; 149
+     53e:	40 e0       	ldi	r20, 0x00	; 0
+     540:	50 e0       	ldi	r21, 0x00	; 0
+     542:	ba 01       	movw	r22, r20
+     544:	8b e3       	ldi	r24, 0x3B	; 59
+     546:	46 df       	rcall	.-372    	; 0x3d4 <SD_SendCommand>
+     548:	c8 2f       	mov	r28, r24
+     54a:	8f ef       	ldi	r24, 0xFF	; 255
+     54c:	3e df       	rcall	.-388    	; 0x3ca <SPI_TransferByte>
+     54e:	8c 2f       	mov	r24, r28
+     550:	cf 91       	pop	r28
+     552:	08 95       	ret
+
+00000554 <SD_erase>:
+/*SD卡擦除函数*/
+void SD_erase(unsigned long addr1,unsigned long addr2)
+{   
+     554:	cf 92       	push	r12
+     556:	df 92       	push	r13
+     558:	ef 92       	push	r14
+     55a:	ff 92       	push	r15
+     55c:	69 01       	movw	r12, r18
+     55e:	7a 01       	movw	r14, r20
+	unsigned char temp;
+	temp=SD_SendCommand(SD_EARSE_WR_BLK_START_ADDR,addr1,0xff); //发送cmd32设定SD卡擦除起始地址
+     560:	2f ef       	ldi	r18, 0xFF	; 255
+     562:	ab 01       	movw	r20, r22
+     564:	bc 01       	movw	r22, r24
+     566:	80 e2       	ldi	r24, 0x20	; 32
+     568:	35 df       	rcall	.-406    	; 0x3d4 <SD_SendCommand>
+	temp=SD_SendCommand(SD_EARSE_WR_BLK_END_ADDR,addr2,0xff);   //发送cmd33设定SD卡擦除结束地址
+     56a:	2f ef       	ldi	r18, 0xFF	; 255
+     56c:	b7 01       	movw	r22, r14
+     56e:	a6 01       	movw	r20, r12
+     570:	81 e2       	ldi	r24, 0x21	; 33
+     572:	30 df       	rcall	.-416    	; 0x3d4 <SD_SendCommand>
+	temp=SD_SendCommand(SD_EARSE,0x00,0xff);                   // 发送CMD38执行擦除操作
+     574:	2f ef       	ldi	r18, 0xFF	; 255
+     576:	40 e0       	ldi	r20, 0x00	; 0
+     578:	50 e0       	ldi	r21, 0x00	; 0
+     57a:	ba 01       	movw	r22, r20
+     57c:	86 e2       	ldi	r24, 0x26	; 38
+     57e:	2a df       	rcall	.-428    	; 0x3d4 <SD_SendCommand>
+	SD_Enable();
+     580:	c6 98       	cbi	0x18, 6	; 24
+	while(temp==0x00)
+     582:	81 11       	cpse	r24, r1
+     584:	05 c0       	rjmp	.+10     	; 0x590 <SD_erase+0x3c>
+	{temp=SPI_TransferByte(0xff);
+     586:	8f ef       	ldi	r24, 0xFF	; 255
+     588:	20 df       	rcall	.-448    	; 0x3ca <SPI_TransferByte>
+	 PORTC=temp;}
+     58a:	85 bb       	out	0x15, r24	; 21
+	unsigned char temp;
+	temp=SD_SendCommand(SD_EARSE_WR_BLK_START_ADDR,addr1,0xff); //发送cmd32设定SD卡擦除起始地址
+	temp=SD_SendCommand(SD_EARSE_WR_BLK_END_ADDR,addr2,0xff);   //发送cmd33设定SD卡擦除结束地址
+	temp=SD_SendCommand(SD_EARSE,0x00,0xff);                   // 发送CMD38执行擦除操作
+	SD_Enable();
+	while(temp==0x00)
+     58c:	88 23       	and	r24, r24
+     58e:	d9 f3       	breq	.-10     	; 0x586 <SD_erase+0x32>
+	{temp=SPI_TransferByte(0xff);
+	 PORTC=temp;}
+	SD_Disable();
+     590:	c6 9a       	sbi	0x18, 6	; 24
+	
+}
+     592:	ff 90       	pop	r15
+     594:	ef 90       	pop	r14
+     596:	df 90       	pop	r13
+     598:	cf 90       	pop	r12
+     59a:	08 95       	ret
+
+0000059c <Collect_DHT_Data>:
+/*DHT11温湿度数据收集函数*/
+unsigned int  Collect_DHT_Data(void)
+ {  
+     59c:	df 92       	push	r13
+     59e:	ef 92       	push	r14
+     5a0:	ff 92       	push	r15
+     5a2:	0f 93       	push	r16
+     5a4:	1f 93       	push	r17
+     5a6:	cf 93       	push	r28
+     5a8:	df 93       	push	r29
+     5aa:	00 d0       	rcall	.+0      	; 0x5ac <Collect_DHT_Data+0x10>
+     5ac:	00 d0       	rcall	.+0      	; 0x5ae <Collect_DHT_Data+0x12>
+     5ae:	1f 92       	push	r1
+     5b0:	cd b7       	in	r28, 0x3d	; 61
+     5b2:	de b7       	in	r29, 0x3e	; 62
+	unsigned char dht_data[5];
+	unsigned char i,j;
+	unsigned char Ccode,temp_l,temp_h,hum_l,hum_h;
+	unsigned int final_dht_data;
+	
+	DHT_Init();    //每次采集数据都要先执行DHT11传感器的初始化
+     5b4:	e2 de       	rcall	.-572    	; 0x37a <DHT_Init>
+	while(!CHECK_DHT_H);  //初始化后DHT11会有80us的低电平响应信号 等待响应完成
+     5b6:	c8 9b       	sbis	0x19, 0	; 25
+     5b8:	fe cf       	rjmp	.-4      	; 0x5b6 <Collect_DHT_Data+0x1a>
+	while(CHECK_DHT_H);   //响应完成后 DHT11拉高80us 等待完成
+     5ba:	c8 99       	sbic	0x19, 0	; 25
+     5bc:	fe cf       	rjmp	.-4      	; 0x5ba <Collect_DHT_Data+0x1e>
+     5be:	de 01       	movw	r26, r28
+     5c0:	11 96       	adiw	r26, 0x01	; 1
+     5c2:	7e 01       	movw	r14, r28
+     5c4:	26 e0       	ldi	r18, 0x06	; 6
+     5c6:	e2 0e       	add	r14, r18
+     5c8:	f1 1c       	adc	r15, r1
+	for(i=0;i<5;i++)     //开始收集收据
+	{ 
+		dht_data[i]=0x00;
+     5ca:	0f 2e       	mov	r0, r31
+     5cc:	f7 e0       	ldi	r31, 0x07	; 7
+     5ce:	df 2e       	mov	r13, r31
+     5d0:	f0 2d       	mov	r31, r0
+     5d2:	50 e0       	ldi	r21, 0x00	; 0
+		{ 
+			while(!CHECK_DHT_H);  //等待上一bit数据高电平结束
+			_delay_us(50);       //延迟50us
+			if(CHECK_DHT_H)     // 如果此时信号依然为高，那么代表此位数据应为1
+			{
+			 dht_data[i]|=(1<<(7-j));
+     5d4:	61 e0       	ldi	r22, 0x01	; 1
+     5d6:	70 e0       	ldi	r23, 0x00	; 0
+     5d8:	fd 01       	movw	r30, r26
+	DHT_Init();    //每次采集数据都要先执行DHT11传感器的初始化
+	while(!CHECK_DHT_H);  //初始化后DHT11会有80us的低电平响应信号 等待响应完成
+	while(CHECK_DHT_H);   //响应完成后 DHT11拉高80us 等待完成
+	for(i=0;i<5;i++)     //开始收集收据
+	{ 
+		dht_data[i]=0x00;
+     5da:	1c 92       	st	X, r1
+     5dc:	8d 2d       	mov	r24, r13
+     5de:	95 2f       	mov	r25, r21
+		for(j=0;j<8;j++)
+		{ 
+			while(!CHECK_DHT_H);  //等待上一bit数据高电平结束
+     5e0:	c8 9b       	sbis	0x19, 0	; 25
+     5e2:	fe cf       	rjmp	.-4      	; 0x5e0 <Collect_DHT_Data+0x44>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+     5e4:	25 e8       	ldi	r18, 0x85	; 133
+     5e6:	2a 95       	dec	r18
+     5e8:	f1 f7       	brne	.-4      	; 0x5e6 <Collect_DHT_Data+0x4a>
+     5ea:	00 00       	nop
+			_delay_us(50);       //延迟50us
+			if(CHECK_DHT_H)     // 如果此时信号依然为高，那么代表此位数据应为1
+     5ec:	c8 9b       	sbis	0x19, 0	; 25
+     5ee:	0a c0       	rjmp	.+20     	; 0x604 <Collect_DHT_Data+0x68>
+			{
+			 dht_data[i]|=(1<<(7-j));
+     5f0:	40 81       	ld	r20, Z
+     5f2:	9b 01       	movw	r18, r22
+     5f4:	08 2e       	mov	r0, r24
+     5f6:	02 c0       	rjmp	.+4      	; 0x5fc <Collect_DHT_Data+0x60>
+     5f8:	22 0f       	add	r18, r18
+     5fa:	33 1f       	adc	r19, r19
+     5fc:	0a 94       	dec	r0
+     5fe:	e2 f7       	brpl	.-8      	; 0x5f8 <Collect_DHT_Data+0x5c>
+     600:	24 2b       	or	r18, r20
+     602:	20 83       	st	Z, r18
+			}
+			while(CHECK_DHT_H);
+     604:	c8 99       	sbic	0x19, 0	; 25
+     606:	fe cf       	rjmp	.-4      	; 0x604 <Collect_DHT_Data+0x68>
+     608:	01 97       	sbiw	r24, 0x01	; 1
+     60a:	50 f7       	brcc	.-44     	; 0x5e0 <Collect_DHT_Data+0x44>
+     60c:	11 96       	adiw	r26, 0x01	; 1
+	unsigned int final_dht_data;
+	
+	DHT_Init();    //每次采集数据都要先执行DHT11传感器的初始化
+	while(!CHECK_DHT_H);  //初始化后DHT11会有80us的低电平响应信号 等待响应完成
+	while(CHECK_DHT_H);   //响应完成后 DHT11拉高80us 等待完成
+	for(i=0;i<5;i++)     //开始收集收据
+     60e:	ae 15       	cp	r26, r14
+     610:	bf 05       	cpc	r27, r15
+     612:	11 f7       	brne	.-60     	; 0x5d8 <Collect_DHT_Data+0x3c>
+			}
+			while(CHECK_DHT_H);
+		}
+	  	
+	}
+	DHT_DATA_O;   
+     614:	d0 9a       	sbi	0x1a, 0	; 26
+	DHT_H;     //停止采集 设置端口为输出切上拉
+     616:	d8 9a       	sbi	0x1b, 0	; 27
+	Ccode=(dht_data[0]+dht_data[1]+dht_data[2]+dht_data[3]);//得到数据检验码
+     618:	39 81       	ldd	r19, Y+1	; 0x01
+     61a:	2b 81       	ldd	r18, Y+3	; 0x03
+     61c:	8a 81       	ldd	r24, Y+2	; 0x02
+     61e:	83 0f       	add	r24, r19
+     620:	82 0f       	add	r24, r18
+     622:	9c 81       	ldd	r25, Y+4	; 0x04
+     624:	89 0f       	add	r24, r25
+	if(Ccode==dht_data[4]) //检查数据无误后获得收据
+     626:	9d 81       	ldd	r25, Y+5	; 0x05
+     628:	98 13       	cpse	r25, r24
+     62a:	02 c0       	rjmp	.+4      	; 0x630 <Collect_DHT_Data+0x94>
+	{
+	hum_h=dht_data[0];
+     62c:	03 2f       	mov	r16, r19
+	hum_l=dht_data[1];
+	temp_h=dht_data[2];
+     62e:	12 2f       	mov	r17, r18
+	temp_l=dht_data[3];
+	}
+	final_dht_data=hum_h;  //收据处理
+	final_dht_data<<=8;
+     630:	81 2f       	mov	r24, r17
+     632:	90 e0       	ldi	r25, 0x00	; 0
+	final_dht_data|=temp_h;
+	  
+	return final_dht_data; //返回得到数据，16bit 高8位为湿度，第8位为温度
+ }
+     634:	90 2b       	or	r25, r16
+     636:	0f 90       	pop	r0
+     638:	0f 90       	pop	r0
+     63a:	0f 90       	pop	r0
+     63c:	0f 90       	pop	r0
+     63e:	0f 90       	pop	r0
+     640:	df 91       	pop	r29
+     642:	cf 91       	pop	r28
+     644:	1f 91       	pop	r17
+     646:	0f 91       	pop	r16
+     648:	ff 90       	pop	r15
+     64a:	ef 90       	pop	r14
+     64c:	df 90       	pop	r13
+     64e:	08 95       	ret
+
+00000650 <Collect_ADC_Data>:
+ /*收集数模转换数据函数*/
+unsigned char Collect_ADC_Data(void)
+{ 
+  unsigned int adc_data,adc_l,adc_h;
+  
+  ADCSRA|=(1<<ADSC);   //开始AD转换
+     650:	36 9a       	sbi	0x06, 6	; 6
+  while(!(ADCSRA & 0x10));  //等待转换结束
+     652:	34 9b       	sbis	0x06, 4	; 6
+     654:	fe cf       	rjmp	.-4      	; 0x652 <Collect_ADC_Data+0x2>
+     656:	87 ee       	ldi	r24, 0xE7	; 231
+     658:	93 e0       	ldi	r25, 0x03	; 3
+     65a:	01 97       	sbiw	r24, 0x01	; 1
+     65c:	f1 f7       	brne	.-4      	; 0x65a <Collect_ADC_Data+0xa>
+     65e:	00 c0       	rjmp	.+0      	; 0x660 <Collect_ADC_Data+0x10>
+     660:	00 00       	nop
+  _delay_us(500);
+  adc_l=ADCL;          //读取低位数据
+     662:	84 b1       	in	r24, 0x04	; 4
+  adc_h=ADCH;           //读取高位数据
+     664:	25 b1       	in	r18, 0x05	; 5
+  adc_data=adc_h<<8|adc_l;
+     666:	90 e0       	ldi	r25, 0x00	; 0
+     668:	92 2b       	or	r25, r18
+  adc_data=adc_data>>1;               //放弃一位的精度
+     66a:	96 95       	lsr	r25
+     66c:	87 95       	ror	r24
+  adc_data-=35;                        //修正
+  ADCSRA&=~(1<<ADIF);    //清标志
+     66e:	34 98       	cbi	0x06, 4	; 6
+  return adc_data;      //返回转换后数据
+}
+     670:	83 52       	subi	r24, 0x23	; 35
+     672:	08 95       	ret
+
+00000674 <Collect_BUTTON_Data>:
+/*判断按钮是否按下函数*/
+unsigned char Collect_BUTTON_Data(void)
+{   
+	unsigned char button;
+	DDRE&= ~(1<<PE5);
+     674:	15 98       	cbi	0x02, 5	; 2
+	PORTE&= ~(1<<PE5);
+     676:	1d 98       	cbi	0x03, 5	; 3
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+     678:	8f e1       	ldi	r24, 0x1F	; 31
+     67a:	9e e4       	ldi	r25, 0x4E	; 78
+     67c:	01 97       	sbiw	r24, 0x01	; 1
+     67e:	f1 f7       	brne	.-4      	; 0x67c <Collect_BUTTON_Data+0x8>
+     680:	00 c0       	rjmp	.+0      	; 0x682 <Collect_BUTTON_Data+0xe>
+     682:	00 00       	nop
+	_delay_ms(10);
+	if ((PINE&(1<<PE5))==0) button=0;  //按下显示0
+     684:	81 b1       	in	r24, 0x01	; 1
+	if (!(PINE&(1<<PE5))==0) button=1; //没按下显示1
+     686:	81 b1       	in	r24, 0x01	; 1
+     688:	ef e1       	ldi	r30, 0x1F	; 31
+     68a:	fe e4       	ldi	r31, 0x4E	; 78
+     68c:	31 97       	sbiw	r30, 0x01	; 1
+     68e:	f1 f7       	brne	.-4      	; 0x68c <Collect_BUTTON_Data+0x18>
+     690:	00 c0       	rjmp	.+0      	; 0x692 <Collect_BUTTON_Data+0x1e>
+     692:	00 00       	nop
+	_delay_ms(10);
+	return button;
+}
+     694:	85 fb       	bst	r24, 5
+     696:	88 27       	eor	r24, r24
+     698:	80 f9       	bld	r24, 0
+     69a:	08 95       	ret
+
+0000069c <data_to_dec>:
+{
+	unsigned char temp,temp_units, temp_tens;
+	unsigned int t;
+	//temp=(data>>8);
+	  temp=data;
+	 temp_units=temp%10;
+     69c:	4d ec       	ldi	r20, 0xCD	; 205
+     69e:	84 9f       	mul	r24, r20
+     6a0:	41 2d       	mov	r20, r1
+     6a2:	11 24       	eor	r1, r1
+     6a4:	46 95       	lsr	r20
+     6a6:	46 95       	lsr	r20
+     6a8:	46 95       	lsr	r20
+     6aa:	24 2f       	mov	r18, r20
+     6ac:	22 0f       	add	r18, r18
+     6ae:	92 2f       	mov	r25, r18
+     6b0:	99 0f       	add	r25, r25
+     6b2:	99 0f       	add	r25, r25
+     6b4:	92 0f       	add	r25, r18
+     6b6:	89 1b       	sub	r24, r25
+	 temp_tens=temp/10;
+	 t=temp_units*10+temp_tens;
+     6b8:	28 2f       	mov	r18, r24
+     6ba:	30 e0       	ldi	r19, 0x00	; 0
+     6bc:	c9 01       	movw	r24, r18
+     6be:	88 0f       	add	r24, r24
+     6c0:	99 1f       	adc	r25, r25
+     6c2:	22 0f       	add	r18, r18
+     6c4:	33 1f       	adc	r19, r19
+     6c6:	22 0f       	add	r18, r18
+     6c8:	33 1f       	adc	r19, r19
+     6ca:	22 0f       	add	r18, r18
+     6cc:	33 1f       	adc	r19, r19
+     6ce:	82 0f       	add	r24, r18
+     6d0:	93 1f       	adc	r25, r19
+	 return t;
+	 
+}
+     6d2:	84 0f       	add	r24, r20
+     6d4:	91 1d       	adc	r25, r1
+     6d6:	08 95       	ret
+
+000006d8 <SD_Write>:
+/*SD卡写入数据函数*/
+unsigned char SD_Write(void)
+{ 
+     6d8:	af 92       	push	r10
+     6da:	bf 92       	push	r11
+     6dc:	cf 92       	push	r12
+     6de:	df 92       	push	r13
+     6e0:	ef 92       	push	r14
+     6e2:	ff 92       	push	r15
+     6e4:	0f 93       	push	r16
+     6e6:	1f 93       	push	r17
+     6e8:	cf 93       	push	r28
+     6ea:	df 93       	push	r29
+ unsigned int i,t0,t1,h0,h1,stop_temp;
+ unsigned long addr;
+ //addr=420048<<9;
+ addr=w_addr;
+ 
+ SD_SendCommand(SD_WRITE_BLOCK,addr,0xFF);  //发送CMD24命令，指定开始写入的地址
+     6ec:	40 91 49 02 	lds	r20, 0x0249
+     6f0:	50 91 4a 02 	lds	r21, 0x024A
+     6f4:	60 91 4b 02 	lds	r22, 0x024B
+     6f8:	70 91 4c 02 	lds	r23, 0x024C
+     6fc:	2f ef       	ldi	r18, 0xFF	; 255
+     6fe:	88 e1       	ldi	r24, 0x18	; 24
+     700:	69 de       	rcall	.-814    	; 0x3d4 <SD_SendCommand>
+ 
+ SD_Enable();
+     702:	c6 98       	cbi	0x18, 6	; 24
+ 
+ SPI_TransferByte(0xff);  
+     704:	8f ef       	ldi	r24, 0xFF	; 255
+     706:	61 de       	rcall	.-830    	; 0x3ca <SPI_TransferByte>
+ SPI_TransferByte(0xff);
+     708:	8f ef       	ldi	r24, 0xFF	; 255
+     70a:	5f de       	rcall	.-834    	; 0x3ca <SPI_TransferByte>
+ SPI_TransferByte(0xff);
+     70c:	8f ef       	ldi	r24, 0xFF	; 255
+     70e:	5d de       	rcall	.-838    	; 0x3ca <SPI_TransferByte>
+ SPI_TransferByte(0xff);
+     710:	8f ef       	ldi	r24, 0xFF	; 255
+     712:	5b de       	rcall	.-842    	; 0x3ca <SPI_TransferByte>
+ SPI_TransferByte(0xff);
+     714:	8f ef       	ldi	r24, 0xFF	; 255
+     716:	59 de       	rcall	.-846    	; 0x3ca <SPI_TransferByte>
+ SPI_TransferByte(0xff); //适当延迟一定时间 避免错误
+     718:	8f ef       	ldi	r24, 0xFF	; 255
+     71a:	57 de       	rcall	.-850    	; 0x3ca <SPI_TransferByte>
+ 
+ SPI_TransferByte(0xfe);  //发送数据头标识确认开始录入数据
+     71c:	8e ef       	ldi	r24, 0xFE	; 254
+     71e:	55 de       	rcall	.-854    	; 0x3ca <SPI_TransferByte>
+     720:	0f 2e       	mov	r0, r31
+     722:	f2 ed       	ldi	r31, 0xD2	; 210
+     724:	cf 2e       	mov	r12, r31
+     726:	f3 e0       	ldi	r31, 0x03	; 3
+     728:	df 2e       	mov	r13, r31
+     72a:	f0 2d       	mov	r31, r0
+     72c:	0f 2e       	mov	r0, r31
+     72e:	fd e4       	ldi	r31, 0x4D	; 77
+     730:	ef 2e       	mov	r14, r31
+     732:	f2 e0       	ldi	r31, 0x02	; 2
+     734:	ff 2e       	mov	r15, r31
+     736:	f0 2d       	mov	r31, r0
+ 
+   
+	  for (i=0;i<32;i++)
+     738:	00 e0       	ldi	r16, 0x00	; 0
+     73a:	10 e0       	ldi	r17, 0x00	; 0
+     73c:	0f 2e       	mov	r0, r31
+     73e:	fd e0       	ldi	r31, 0x0D	; 13
+     740:	af 2e       	mov	r10, r31
+     742:	f0 2d       	mov	r31, r0
+     744:	b1 2c       	mov	r11, r1
+      {  
+		if(i<=w_time||button_stop==0)
+     746:	80 91 02 01 	lds	r24, 0x0102
+     74a:	90 91 03 01 	lds	r25, 0x0103
+     74e:	80 17       	cp	r24, r16
+     750:	91 07       	cpc	r25, r17
+     752:	20 f4       	brcc	.+8      	; 0x75c <SD_Write+0x84>
+     754:	80 91 3c 01 	lds	r24, 0x013C
+     758:	81 11       	cpse	r24, r1
+     75a:	7d c0       	rjmp	.+250    	; 0x856 <SD_Write+0x17e>
+		 {
+			 t0=w_data_t[i]%10;
+     75c:	f6 01       	movw	r30, r12
+     75e:	c0 81       	ld	r28, Z
+     760:	d1 81       	ldd	r29, Z+1	; 0x01
+     762:	9e 01       	movw	r18, r28
+     764:	ad ec       	ldi	r26, 0xCD	; 205
+     766:	bc ec       	ldi	r27, 0xCC	; 204
+     768:	10 d6       	rcall	.+3104   	; 0x138a <__umulhisi3>
+     76a:	96 95       	lsr	r25
+     76c:	87 95       	ror	r24
+     76e:	96 95       	lsr	r25
+     770:	87 95       	ror	r24
+     772:	96 95       	lsr	r25
+     774:	87 95       	ror	r24
+     776:	9c 01       	movw	r18, r24
+     778:	22 0f       	add	r18, r18
+     77a:	33 1f       	adc	r19, r19
+     77c:	88 0f       	add	r24, r24
+     77e:	99 1f       	adc	r25, r25
+     780:	88 0f       	add	r24, r24
+     782:	99 1f       	adc	r25, r25
+     784:	88 0f       	add	r24, r24
+     786:	99 1f       	adc	r25, r25
+     788:	82 0f       	add	r24, r18
+     78a:	93 1f       	adc	r25, r19
+     78c:	9e 01       	movw	r18, r28
+     78e:	28 1b       	sub	r18, r24
+     790:	39 0b       	sbc	r19, r25
+     792:	c9 01       	movw	r24, r18
+		     t1=w_data_t[i]/10;
+		     SPI_TransferByte(t0+48);
+     794:	80 5d       	subi	r24, 0xD0	; 208
+     796:	19 de       	rcall	.-974    	; 0x3ca <SPI_TransferByte>
+	  for (i=0;i<32;i++)
+      {  
+		if(i<=w_time||button_stop==0)
+		 {
+			 t0=w_data_t[i]%10;
+		     t1=w_data_t[i]/10;
+     798:	9e 01       	movw	r18, r28
+     79a:	ad ec       	ldi	r26, 0xCD	; 205
+     79c:	bc ec       	ldi	r27, 0xCC	; 204
+     79e:	f5 d5       	rcall	.+3050   	; 0x138a <__umulhisi3>
+     7a0:	96 95       	lsr	r25
+     7a2:	87 95       	ror	r24
+     7a4:	96 95       	lsr	r25
+     7a6:	87 95       	ror	r24
+     7a8:	96 95       	lsr	r25
+     7aa:	87 95       	ror	r24
+		     SPI_TransferByte(t0+48);
+		     SPI_TransferByte(t1+48);  //录入温度数据
+     7ac:	80 5d       	subi	r24, 0xD0	; 208
+     7ae:	0d de       	rcall	.-998    	; 0x3ca <SPI_TransferByte>
+			 
+			 SPI_TransferByte(0x00);
+     7b0:	80 e0       	ldi	r24, 0x00	; 0
+     7b2:	0b de       	rcall	.-1002   	; 0x3ca <SPI_TransferByte>
+			 
+			 h0=w_data_h[i]%10;
+     7b4:	f7 01       	movw	r30, r14
+     7b6:	c0 81       	ld	r28, Z
+     7b8:	d1 81       	ldd	r29, Z+1	; 0x01
+     7ba:	9e 01       	movw	r18, r28
+     7bc:	ad ec       	ldi	r26, 0xCD	; 205
+     7be:	bc ec       	ldi	r27, 0xCC	; 204
+     7c0:	e4 d5       	rcall	.+3016   	; 0x138a <__umulhisi3>
+     7c2:	96 95       	lsr	r25
+     7c4:	87 95       	ror	r24
+     7c6:	96 95       	lsr	r25
+     7c8:	87 95       	ror	r24
+     7ca:	96 95       	lsr	r25
+     7cc:	87 95       	ror	r24
+     7ce:	9c 01       	movw	r18, r24
+     7d0:	22 0f       	add	r18, r18
+     7d2:	33 1f       	adc	r19, r19
+     7d4:	88 0f       	add	r24, r24
+     7d6:	99 1f       	adc	r25, r25
+     7d8:	88 0f       	add	r24, r24
+     7da:	99 1f       	adc	r25, r25
+     7dc:	88 0f       	add	r24, r24
+     7de:	99 1f       	adc	r25, r25
+     7e0:	82 0f       	add	r24, r18
+     7e2:	93 1f       	adc	r25, r19
+     7e4:	9e 01       	movw	r18, r28
+     7e6:	28 1b       	sub	r18, r24
+     7e8:	39 0b       	sbc	r19, r25
+     7ea:	c9 01       	movw	r24, r18
+			 h1=w_data_h[i]/10;
+			 SPI_TransferByte(h0+48);  
+     7ec:	80 5d       	subi	r24, 0xD0	; 208
+     7ee:	ed dd       	rcall	.-1062   	; 0x3ca <SPI_TransferByte>
+		     SPI_TransferByte(t1+48);  //录入温度数据
+			 
+			 SPI_TransferByte(0x00);
+			 
+			 h0=w_data_h[i]%10;
+			 h1=w_data_h[i]/10;
+     7f0:	9e 01       	movw	r18, r28
+     7f2:	ad ec       	ldi	r26, 0xCD	; 205
+     7f4:	bc ec       	ldi	r27, 0xCC	; 204
+     7f6:	c9 d5       	rcall	.+2962   	; 0x138a <__umulhisi3>
+     7f8:	96 95       	lsr	r25
+     7fa:	87 95       	ror	r24
+     7fc:	96 95       	lsr	r25
+     7fe:	87 95       	ror	r24
+     800:	96 95       	lsr	r25
+     802:	87 95       	ror	r24
+			 SPI_TransferByte(h0+48);  
+			 SPI_TransferByte(h1+48);  //录入湿度数据
+     804:	80 5d       	subi	r24, 0xD0	; 208
+     806:	e1 dd       	rcall	.-1086   	; 0x3ca <SPI_TransferByte>
+			 
+			 SPI_TransferByte(0x00);
+     808:	80 e0       	ldi	r24, 0x00	; 0
+     80a:	df dd       	rcall	.-1090   	; 0x3ca <SPI_TransferByte>
+     80c:	f8 01       	movw	r30, r16
+     80e:	e1 5c       	subi	r30, 0xC1	; 193
+     810:	fe 4f       	sbci	r31, 0xFE	; 254
+			 
+			 
+			 SPI_TransferByte(w_data_adc_int[i]+48);
+     812:	80 81       	ld	r24, Z
+     814:	80 5d       	subi	r24, 0xD0	; 208
+     816:	d9 dd       	rcall	.-1102   	; 0x3ca <SPI_TransferByte>
+			 SPI_TransferByte(0x2E);
+     818:	8e e2       	ldi	r24, 0x2E	; 46
+     81a:	d7 dd       	rcall	.-1106   	; 0x3ca <SPI_TransferByte>
+     81c:	f8 01       	movw	r30, r16
+     81e:	ee 52       	subi	r30, 0x2E	; 46
+     820:	fb 4f       	sbci	r31, 0xFB	; 251
+			 SPI_TransferByte(w_data_adc_sn1[i]+48);
+     822:	80 81       	ld	r24, Z
+     824:	80 5d       	subi	r24, 0xD0	; 208
+     826:	d1 dd       	rcall	.-1118   	; 0x3ca <SPI_TransferByte>
+     828:	f8 01       	movw	r30, r16
+     82a:	ee 5a       	subi	r30, 0xAE	; 174
+     82c:	fc 4f       	sbci	r31, 0xFC	; 252
+			 SPI_TransferByte(w_data_adc_sn2[i]+48); //录入adc数据
+     82e:	80 81       	ld	r24, Z
+     830:	80 5d       	subi	r24, 0xD0	; 208
+     832:	cb dd       	rcall	.-1130   	; 0x3ca <SPI_TransferByte>
+			 
+			 SPI_TransferByte(0x00);
+     834:	80 e0       	ldi	r24, 0x00	; 0
+     836:	c9 dd       	rcall	.-1134   	; 0x3ca <SPI_TransferByte>
+			 
+			 SPI_TransferByte(0x00);
+     838:	80 e0       	ldi	r24, 0x00	; 0
+     83a:	c7 dd       	rcall	.-1138   	; 0x3ca <SPI_TransferByte>
+     83c:	f8 01       	movw	r30, r16
+     83e:	ed 53       	subi	r30, 0x3D	; 61
+     840:	fe 4f       	sbci	r31, 0xFE	; 254
+			 SPI_TransferByte(w_data_button[i]+48);  //录入按钮数据
+     842:	80 81       	ld	r24, Z
+     844:	80 5d       	subi	r24, 0xD0	; 208
+     846:	c1 dd       	rcall	.-1150   	; 0x3ca <SPI_TransferByte>
+			 
+		 }
+		 
+	    if(i>w_time)
+     848:	80 91 02 01 	lds	r24, 0x0102
+     84c:	90 91 03 01 	lds	r25, 0x0103
+     850:	80 17       	cp	r24, r16
+     852:	91 07       	cpc	r25, r17
+     854:	30 f4       	brcc	.+12     	; 0x862 <SD_Write+0x18a>
+ SPI_TransferByte(0xff); //适当延迟一定时间 避免错误
+ 
+ SPI_TransferByte(0xfe);  //发送数据头标识确认开始录入数据
+ 
+   
+	  for (i=0;i<32;i++)
+     856:	ca 2d       	mov	r28, r10
+     858:	db 2d       	mov	r29, r11
+		 
+	    if(i>w_time)
+		 {  
+			  for(stop_temp=0;stop_temp<13;stop_temp++)
+		     { 
+				 SPI_TransferByte(0x00);  //停止键按下时候的空数据
+     85a:	80 e0       	ldi	r24, 0x00	; 0
+     85c:	b6 dd       	rcall	.-1172   	; 0x3ca <SPI_TransferByte>
+     85e:	21 97       	sbiw	r28, 0x01	; 1
+			 
+		 }
+		 
+	    if(i>w_time)
+		 {  
+			  for(stop_temp=0;stop_temp<13;stop_temp++)
+     860:	e1 f7       	brne	.-8      	; 0x85a <SD_Write+0x182>
+		     { 
+				 SPI_TransferByte(0x00);  //停止键按下时候的空数据
+			 }
+		 }
+		SPI_TransferByte(0);
+     862:	80 e0       	ldi	r24, 0x00	; 0
+     864:	b2 dd       	rcall	.-1180   	; 0x3ca <SPI_TransferByte>
+	    SPI_TransferByte(0);
+     866:	80 e0       	ldi	r24, 0x00	; 0
+     868:	b0 dd       	rcall	.-1184   	; 0x3ca <SPI_TransferByte>
+		SPI_TransferByte(0);
+     86a:	80 e0       	ldi	r24, 0x00	; 0
+     86c:	ae dd       	rcall	.-1188   	; 0x3ca <SPI_TransferByte>
+ SPI_TransferByte(0xff); //适当延迟一定时间 避免错误
+ 
+ SPI_TransferByte(0xfe);  //发送数据头标识确认开始录入数据
+ 
+   
+	  for (i=0;i<32;i++)
+     86e:	0f 5f       	subi	r16, 0xFF	; 255
+     870:	1f 4f       	sbci	r17, 0xFF	; 255
+     872:	e2 e0       	ldi	r30, 0x02	; 2
+     874:	ce 0e       	add	r12, r30
+     876:	d1 1c       	adc	r13, r1
+     878:	f2 e0       	ldi	r31, 0x02	; 2
+     87a:	ef 0e       	add	r14, r31
+     87c:	f1 1c       	adc	r15, r1
+     87e:	00 32       	cpi	r16, 0x20	; 32
+     880:	11 05       	cpc	r17, r1
+     882:	09 f0       	breq	.+2      	; 0x886 <SD_Write+0x1ae>
+     884:	60 cf       	rjmp	.-320    	; 0x746 <SD_Write+0x6e>
+		SPI_TransferByte(0);
+	  }
+ 
+  
+ 
+ SPI_TransferByte(0x95);
+     886:	85 e9       	ldi	r24, 0x95	; 149
+     888:	a0 dd       	rcall	.-1216   	; 0x3ca <SPI_TransferByte>
+ SPI_TransferByte(0x95);
+     88a:	85 e9       	ldi	r24, 0x95	; 149
+     88c:	9e dd       	rcall	.-1220   	; 0x3ca <SPI_TransferByte>
+ 
+ while ((temp = SPI_TransferByte(0xff)) == 0xff);//等待传输结束
+     88e:	8f ef       	ldi	r24, 0xFF	; 255
+     890:	9c dd       	rcall	.-1224   	; 0x3ca <SPI_TransferByte>
+     892:	c8 2f       	mov	r28, r24
+     894:	8f 3f       	cpi	r24, 0xFF	; 255
+     896:	d9 f3       	breq	.-10     	; 0x88e <SD_Write+0x1b6>
+ //temp=SPI_TransferByte(0xff); 
+ //while (!((temp&0x0f) == 5));
+ while (!(SPI_TransferByte(0xff)));
+     898:	8f ef       	ldi	r24, 0xFF	; 255
+     89a:	97 dd       	rcall	.-1234   	; 0x3ca <SPI_TransferByte>
+     89c:	88 23       	and	r24, r24
+     89e:	e1 f3       	breq	.-8      	; 0x898 <SD_Write+0x1c0>
+ SD_Disable();
+     8a0:	c6 9a       	sbi	0x18, 6	; 24
+ return temp;
+}
+     8a2:	8c 2f       	mov	r24, r28
+     8a4:	df 91       	pop	r29
+     8a6:	cf 91       	pop	r28
+     8a8:	1f 91       	pop	r17
+     8aa:	0f 91       	pop	r16
+     8ac:	ff 90       	pop	r15
+     8ae:	ef 90       	pop	r14
+     8b0:	df 90       	pop	r13
+     8b2:	cf 90       	pop	r12
+     8b4:	bf 90       	pop	r11
+     8b6:	af 90       	pop	r10
+     8b8:	08 95       	ret
+
+000008ba <Set_SD_File_Addr>:
+/*确认SD卡文件内地址函数*/
+void Set_SD_File_Addr(void)
+{   
+     8ba:	3f 92       	push	r3
+     8bc:	4f 92       	push	r4
+     8be:	5f 92       	push	r5
+     8c0:	6f 92       	push	r6
+     8c2:	7f 92       	push	r7
+     8c4:	8f 92       	push	r8
+     8c6:	9f 92       	push	r9
+     8c8:	af 92       	push	r10
+     8ca:	bf 92       	push	r11
+     8cc:	cf 92       	push	r12
+     8ce:	df 92       	push	r13
+     8d0:	ef 92       	push	r14
+     8d2:	ff 92       	push	r15
+     8d4:	0f 93       	push	r16
+     8d6:	1f 93       	push	r17
+     8d8:	cf 93       	push	r28
+     8da:	df 93       	push	r29
+     8dc:	cd b7       	in	r28, 0x3d	; 61
+     8de:	de b7       	in	r29, 0x3e	; 62
+     8e0:	ac 97       	sbiw	r28, 0x2c	; 44
+     8e2:	0f b6       	in	r0, 0x3f	; 63
+     8e4:	f8 94       	cli
+     8e6:	de bf       	out	0x3e, r29	; 62
+     8e8:	0f be       	out	0x3f, r0	; 63
+     8ea:	cd bf       	out	0x3d, r28	; 61
+	unsigned int i,j,RsvdSecCnt,temp0;
+	unsigned char SecPerClus,temp;
+	unsigned long RootClus,FAtSz32,RootDirAddr,temp1,check_file_name[8],FileClus;
+	/*读引导扇区获得每簇扇区数，保留扇区数，fat表扇区数，根目录簇号*/
+	SD_SendCommand(SD_READ_BLOCK,0x00000000,0xFF); //发送CMD17 设置地址为0x00000000即SD卡的引导扇区
+     8ec:	2f ef       	ldi	r18, 0xFF	; 255
+     8ee:	40 e0       	ldi	r20, 0x00	; 0
+     8f0:	50 e0       	ldi	r21, 0x00	; 0
+     8f2:	ba 01       	movw	r22, r20
+     8f4:	81 e1       	ldi	r24, 0x11	; 17
+     8f6:	6e dd       	rcall	.-1316   	; 0x3d4 <SD_SendCommand>
+	SD_Enable(); 
+     8f8:	c6 98       	cbi	0x18, 6	; 24
+	
+	while ((SPI_TransferByte(0xff))!= 0xfe); //接收SD卡开始发送数据标志
+     8fa:	8f ef       	ldi	r24, 0xFF	; 255
+     8fc:	66 dd       	rcall	.-1332   	; 0x3ca <SPI_TransferByte>
+     8fe:	8e 3f       	cpi	r24, 0xFE	; 254
+     900:	e1 f7       	brne	.-8      	; 0x8fa <Set_SD_File_Addr+0x40>
+     902:	01 e0       	ldi	r16, 0x01	; 1
+     904:	10 e0       	ldi	r17, 0x00	; 0
+     906:	02 c0       	rjmp	.+4      	; 0x90c <Set_SD_File_Addr+0x52>
+     908:	0f 5f       	subi	r16, 0xFF	; 255
+     90a:	1f 4f       	sbci	r17, 0xFF	; 255
+	for(i=0;i<512;i++)
+	{    
+		//if(i==13) {temp=SPI_TransferByte(0xff);PORTC=temp;}
+		//if(i!=13)SPI_TransferByte(0xff);
+		switch (i)
+     90c:	f8 01       	movw	r30, r16
+     90e:	3e 97       	sbiw	r30, 0x0e	; 14
+     910:	e3 32       	cpi	r30, 0x23	; 35
+     912:	f1 05       	cpc	r31, r1
+     914:	08 f0       	brcs	.+2      	; 0x918 <Set_SD_File_Addr+0x5e>
+     916:	36 c0       	rjmp	.+108    	; 0x984 <Set_SD_File_Addr+0xca>
+     918:	ea 5b       	subi	r30, 0xBA	; 186
+     91a:	ff 4f       	sbci	r31, 0xFF	; 255
+     91c:	2d c5       	rjmp	.+2650   	; 0x1378 <__tablejump2__>
+		{
+	      case 13: {SecPerClus=SPI_TransferByte(0xff); break;}  //偏移量13 一字节 每簇扇区数
+     91e:	8f ef       	ldi	r24, 0xFF	; 255
+     920:	54 dd       	rcall	.-1368   	; 0x3ca <SPI_TransferByte>
+     922:	d8 2e       	mov	r13, r24
+     924:	f1 cf       	rjmp	.-30     	; 0x908 <Set_SD_File_Addr+0x4e>
+		  case 14: {RsvdSecCnt=SPI_TransferByte(0xff); break;}  //偏移量14 两字节 保留扇区数
+     926:	8f ef       	ldi	r24, 0xFF	; 255
+     928:	50 dd       	rcall	.-1376   	; 0x3ca <SPI_TransferByte>
+     92a:	e8 2e       	mov	r14, r24
+     92c:	f1 2c       	mov	r15, r1
+     92e:	ec cf       	rjmp	.-40     	; 0x908 <Set_SD_File_Addr+0x4e>
+		  case 15: {temp0=SPI_TransferByte(0xff);temp0<<=8;RsvdSecCnt|=temp0;break;}
+     930:	8f ef       	ldi	r24, 0xFF	; 255
+     932:	4b dd       	rcall	.-1386   	; 0x3ca <SPI_TransferByte>
+     934:	f8 2a       	or	r15, r24
+     936:	e8 cf       	rjmp	.-48     	; 0x908 <Set_SD_File_Addr+0x4e>
+		  case 36: {FAtSz32=SPI_TransferByte(0xff);break;}      //偏移量36  四字节 FAT表扇区数
+     938:	8f ef       	ldi	r24, 0xFF	; 255
+     93a:	47 dd       	rcall	.-1394   	; 0x3ca <SPI_TransferByte>
+     93c:	88 2e       	mov	r8, r24
+     93e:	91 2c       	mov	r9, r1
+     940:	a1 2c       	mov	r10, r1
+     942:	b1 2c       	mov	r11, r1
+     944:	e1 cf       	rjmp	.-62     	; 0x908 <Set_SD_File_Addr+0x4e>
+		  case 37: {temp1=SPI_TransferByte(0xff);temp1<<=8;FAtSz32|=temp1;break;}
+     946:	8f ef       	ldi	r24, 0xFF	; 255
+     948:	40 dd       	rcall	.-1408   	; 0x3ca <SPI_TransferByte>
+     94a:	98 2a       	or	r9, r24
+     94c:	dd cf       	rjmp	.-70     	; 0x908 <Set_SD_File_Addr+0x4e>
+		  case 38: {temp1=SPI_TransferByte(0xff);temp1<<=16;FAtSz32|=temp1;break;}
+     94e:	8f ef       	ldi	r24, 0xFF	; 255
+     950:	3c dd       	rcall	.-1416   	; 0x3ca <SPI_TransferByte>
+     952:	a8 2a       	or	r10, r24
+     954:	d9 cf       	rjmp	.-78     	; 0x908 <Set_SD_File_Addr+0x4e>
+		  case 39: {temp1=SPI_TransferByte(0xff);temp1<<=24;FAtSz32|=temp1;break;}
+     956:	8f ef       	ldi	r24, 0xFF	; 255
+     958:	38 dd       	rcall	.-1424   	; 0x3ca <SPI_TransferByte>
+     95a:	b8 2a       	or	r11, r24
+     95c:	d5 cf       	rjmp	.-86     	; 0x908 <Set_SD_File_Addr+0x4e>
+		  case 44: {RootClus=SPI_TransferByte(0xff);break;}	    //偏移量44 四字节 根目录簇号
+     95e:	8f ef       	ldi	r24, 0xFF	; 255
+     960:	34 dd       	rcall	.-1432   	; 0x3ca <SPI_TransferByte>
+     962:	48 2e       	mov	r4, r24
+     964:	51 2c       	mov	r5, r1
+     966:	61 2c       	mov	r6, r1
+     968:	71 2c       	mov	r7, r1
+     96a:	ce cf       	rjmp	.-100    	; 0x908 <Set_SD_File_Addr+0x4e>
+		  case 45: {temp1=SPI_TransferByte(0xff);temp1<<=8;RootClus|=temp1;break;}
+     96c:	8f ef       	ldi	r24, 0xFF	; 255
+     96e:	2d dd       	rcall	.-1446   	; 0x3ca <SPI_TransferByte>
+     970:	58 2a       	or	r5, r24
+     972:	ca cf       	rjmp	.-108    	; 0x908 <Set_SD_File_Addr+0x4e>
+		  case 46: {temp1=SPI_TransferByte(0xff);temp1<<=16;RootClus|=temp1;break;}
+     974:	8f ef       	ldi	r24, 0xFF	; 255
+     976:	29 dd       	rcall	.-1454   	; 0x3ca <SPI_TransferByte>
+     978:	68 2a       	or	r6, r24
+     97a:	c6 cf       	rjmp	.-116    	; 0x908 <Set_SD_File_Addr+0x4e>
+		  case 47: {temp1=SPI_TransferByte(0xff);temp1<<=24;RootClus|=temp1;break; }
+     97c:	8f ef       	ldi	r24, 0xFF	; 255
+     97e:	25 dd       	rcall	.-1462   	; 0x3ca <SPI_TransferByte>
+     980:	78 2a       	or	r7, r24
+     982:	c2 cf       	rjmp	.-124    	; 0x908 <Set_SD_File_Addr+0x4e>
+		  default:{SPI_TransferByte(0xff);}
+     984:	8f ef       	ldi	r24, 0xFF	; 255
+     986:	21 dd       	rcall	.-1470   	; 0x3ca <SPI_TransferByte>
+	/*读引导扇区获得每簇扇区数，保留扇区数，fat表扇区数，根目录簇号*/
+	SD_SendCommand(SD_READ_BLOCK,0x00000000,0xFF); //发送CMD17 设置地址为0x00000000即SD卡的引导扇区
+	SD_Enable(); 
+	
+	while ((SPI_TransferByte(0xff))!= 0xfe); //接收SD卡开始发送数据标志
+	for(i=0;i<512;i++)
+     988:	01 15       	cp	r16, r1
+     98a:	22 e0       	ldi	r18, 0x02	; 2
+     98c:	12 07       	cpc	r17, r18
+     98e:	08 f4       	brcc	.+2      	; 0x992 <Set_SD_File_Addr+0xd8>
+     990:	bb cf       	rjmp	.-138    	; 0x908 <Set_SD_File_Addr+0x4e>
+		  case 46: {temp1=SPI_TransferByte(0xff);temp1<<=16;RootClus|=temp1;break;}
+		  case 47: {temp1=SPI_TransferByte(0xff);temp1<<=24;RootClus|=temp1;break; }
+		  default:{SPI_TransferByte(0xff);}
+		}
+	}
+	SPI_TransferByte(0xff);
+     992:	8f ef       	ldi	r24, 0xFF	; 255
+     994:	1a dd       	rcall	.-1484   	; 0x3ca <SPI_TransferByte>
+	SPI_TransferByte(0xff);
+     996:	8f ef       	ldi	r24, 0xFF	; 255
+     998:	18 dd       	rcall	.-1488   	; 0x3ca <SPI_TransferByte>
+	SD_Disable();
+     99a:	c6 9a       	sbi	0x18, 6	; 24
+	/*找出file1~3的确切起始地址*/
+	
+	if(SDHC==0) RootDirAddr=(FAtSz32*2+RsvdSecCnt)*512;  //首先确认根目录的起始地址
+     99c:	80 91 51 03 	lds	r24, 0x0351
+     9a0:	81 11       	cpse	r24, r1
+     9a2:	18 c0       	rjmp	.+48     	; 0x9d4 <Set_SD_File_Addr+0x11a>
+     9a4:	88 0c       	add	r8, r8
+     9a6:	99 1c       	adc	r9, r9
+     9a8:	aa 1c       	adc	r10, r10
+     9aa:	bb 1c       	adc	r11, r11
+     9ac:	8e 0c       	add	r8, r14
+     9ae:	9f 1c       	adc	r9, r15
+     9b0:	a1 1c       	adc	r10, r1
+     9b2:	b1 1c       	adc	r11, r1
+     9b4:	d5 01       	movw	r26, r10
+     9b6:	c4 01       	movw	r24, r8
+     9b8:	07 2e       	mov	r0, r23
+     9ba:	79 e0       	ldi	r23, 0x09	; 9
+     9bc:	88 0f       	add	r24, r24
+     9be:	99 1f       	adc	r25, r25
+     9c0:	aa 1f       	adc	r26, r26
+     9c2:	bb 1f       	adc	r27, r27
+     9c4:	7a 95       	dec	r23
+     9c6:	d1 f7       	brne	.-12     	; 0x9bc <Set_SD_File_Addr+0x102>
+     9c8:	70 2d       	mov	r23, r0
+     9ca:	89 a3       	std	Y+33, r24	; 0x21
+     9cc:	9a a3       	std	Y+34, r25	; 0x22
+     9ce:	ab a3       	std	Y+35, r26	; 0x23
+     9d0:	bc a3       	std	Y+36, r27	; 0x24
+     9d2:	10 c0       	rjmp	.+32     	; 0x9f4 <Set_SD_File_Addr+0x13a>
+	if(SDHC==1) RootDirAddr=(FAtSz32*2+RsvdSecCnt);
+     9d4:	81 30       	cpi	r24, 0x01	; 1
+     9d6:	71 f4       	brne	.+28     	; 0x9f4 <Set_SD_File_Addr+0x13a>
+     9d8:	88 0c       	add	r8, r8
+     9da:	99 1c       	adc	r9, r9
+     9dc:	aa 1c       	adc	r10, r10
+     9de:	bb 1c       	adc	r11, r11
+     9e0:	a5 01       	movw	r20, r10
+     9e2:	94 01       	movw	r18, r8
+     9e4:	2e 0d       	add	r18, r14
+     9e6:	3f 1d       	adc	r19, r15
+     9e8:	41 1d       	adc	r20, r1
+     9ea:	51 1d       	adc	r21, r1
+     9ec:	29 a3       	std	Y+33, r18	; 0x21
+     9ee:	3a a3       	std	Y+34, r19	; 0x22
+     9f0:	4b a3       	std	Y+35, r20	; 0x23
+     9f2:	5c a3       	std	Y+36, r21	; 0x24
+	
+	SD_SendCommand(SD_READ_BLOCK,RootDirAddr,0xFF); //发送CMD24 设定地址为根目录地址 读取根目录数据
+     9f4:	2f ef       	ldi	r18, 0xFF	; 255
+     9f6:	49 a1       	ldd	r20, Y+33	; 0x21
+     9f8:	5a a1       	ldd	r21, Y+34	; 0x22
+     9fa:	6b a1       	ldd	r22, Y+35	; 0x23
+     9fc:	7c a1       	ldd	r23, Y+36	; 0x24
+     9fe:	81 e1       	ldi	r24, 0x11	; 17
+     a00:	e9 dc       	rcall	.-1582   	; 0x3d4 <SD_SendCommand>
+	SD_Enable();
+     a02:	c6 98       	cbi	0x18, 6	; 24
+	//PORTC=SecPerClus;
+	while ((SPI_TransferByte(0xff))!= 0xfe); //接收SD卡发送数据标识 开始接收数据
+     a04:	8f ef       	ldi	r24, 0xFF	; 255
+     a06:	e1 dc       	rcall	.-1598   	; 0x3ca <SPI_TransferByte>
+     a08:	8e 3f       	cpi	r24, 0xFE	; 254
+     a0a:	e1 f7       	brne	.-8      	; 0xa04 <Set_SD_File_Addr+0x14a>
+		}
+		if((check_file_name[0]==0x454c4946)&&((check_file_name[1]<<24)==0x31000000)) //确认file1的起始地址
+		 {   
+			 FileClus=(check_file_name[5]<<16);
+			 FileClus|=(check_file_name[6]>>16);
+			 if(SDHC==0) File1Addr=RootDirAddr+(FileClus-RootClus)*512*SecPerClus;
+     a0c:	8d 2d       	mov	r24, r13
+     a0e:	90 e0       	ldi	r25, 0x00	; 0
+     a10:	a0 e0       	ldi	r26, 0x00	; 0
+     a12:	b0 e0       	ldi	r27, 0x00	; 0
+     a14:	8d a3       	std	Y+37, r24	; 0x25
+     a16:	9e a3       	std	Y+38, r25	; 0x26
+     a18:	af a3       	std	Y+39, r26	; 0x27
+     a1a:	b8 a7       	std	Y+40, r27	; 0x28
+     a1c:	07 2e       	mov	r0, r23
+     a1e:	79 e0       	ldi	r23, 0x09	; 9
+     a20:	88 0f       	add	r24, r24
+     a22:	99 1f       	adc	r25, r25
+     a24:	aa 1f       	adc	r26, r26
+     a26:	bb 1f       	adc	r27, r27
+     a28:	7a 95       	dec	r23
+     a2a:	d1 f7       	brne	.-12     	; 0xa20 <Set_SD_File_Addr+0x166>
+     a2c:	70 2d       	mov	r23, r0
+     a2e:	89 a7       	std	Y+41, r24	; 0x29
+     a30:	9a a7       	std	Y+42, r25	; 0x2a
+     a32:	ab a7       	std	Y+43, r26	; 0x2b
+     a34:	bc a7       	std	Y+44, r27	; 0x2c
+     a36:	68 94       	set
+     a38:	88 24       	eor	r8, r8
+     a3a:	84 f8       	bld	r8, 4
+     a3c:	91 2c       	mov	r9, r1
+     a3e:	5e 01       	movw	r10, r28
+     a40:	91 e2       	ldi	r25, 0x21	; 33
+     a42:	a9 0e       	add	r10, r25
+     a44:	b1 1c       	adc	r11, r1
+     a46:	3f c1       	rjmp	.+638    	; 0xcc6 <Set_SD_File_Addr+0x40c>
+	while ((SPI_TransferByte(0xff))!= 0xfe); //接收SD卡发送数据标识 开始接收数据
+	for(i=0;i<16;i++)                        //根据FAT32文件系统结构，根目录表为32个字节一组表示一个文件（文件夹亦视为文件）的各种属性 包括文件名，文件起始簇等等
+	{                                           
+		for(j=0;j<8;j++)
+		{
+			check_file_name[j]=SPI_TransferByte(0xff);   //用4个unsigned long型数据来收集32位文件属性数据
+     a48:	8f ef       	ldi	r24, 0xFF	; 255
+     a4a:	bf dc       	rcall	.-1666   	; 0x3ca <SPI_TransferByte>
+     a4c:	38 2e       	mov	r3, r24
+			temp1=SPI_TransferByte(0xff);temp1<<=8;check_file_name[j]|=temp1;
+     a4e:	8f ef       	ldi	r24, 0xFF	; 255
+     a50:	bc dc       	rcall	.-1672   	; 0x3ca <SPI_TransferByte>
+     a52:	c8 2e       	mov	r12, r24
+     a54:	d1 2c       	mov	r13, r1
+     a56:	e1 2c       	mov	r14, r1
+     a58:	f1 2c       	mov	r15, r1
+			temp1=SPI_TransferByte(0xff);temp1<<=16;check_file_name[j]|=temp1;
+     a5a:	8f ef       	ldi	r24, 0xFF	; 255
+     a5c:	b6 dc       	rcall	.-1684   	; 0x3ca <SPI_TransferByte>
+	for(i=0;i<16;i++)                        //根据FAT32文件系统结构，根目录表为32个字节一组表示一个文件（文件夹亦视为文件）的各种属性 包括文件名，文件起始簇等等
+	{                                           
+		for(j=0;j<8;j++)
+		{
+			check_file_name[j]=SPI_TransferByte(0xff);   //用4个unsigned long型数据来收集32位文件属性数据
+			temp1=SPI_TransferByte(0xff);temp1<<=8;check_file_name[j]|=temp1;
+     a5e:	fe 2c       	mov	r15, r14
+     a60:	ed 2c       	mov	r14, r13
+     a62:	dc 2c       	mov	r13, r12
+     a64:	cc 24       	eor	r12, r12
+     a66:	e8 2a       	or	r14, r24
+			temp1=SPI_TransferByte(0xff);temp1<<=16;check_file_name[j]|=temp1;
+     a68:	c3 28       	or	r12, r3
+			temp1=SPI_TransferByte(0xff);temp1<<=24;check_file_name[j]|=temp1;
+     a6a:	8f ef       	ldi	r24, 0xFF	; 255
+     a6c:	ae dc       	rcall	.-1700   	; 0x3ca <SPI_TransferByte>
+     a6e:	f8 2a       	or	r15, r24
+     a70:	d8 01       	movw	r26, r16
+     a72:	cd 92       	st	X+, r12
+     a74:	dd 92       	st	X+, r13
+     a76:	ed 92       	st	X+, r14
+     a78:	fd 92       	st	X+, r15
+     a7a:	8d 01       	movw	r16, r26
+	SD_Enable();
+	//PORTC=SecPerClus;
+	while ((SPI_TransferByte(0xff))!= 0xfe); //接收SD卡发送数据标识 开始接收数据
+	for(i=0;i<16;i++)                        //根据FAT32文件系统结构，根目录表为32个字节一组表示一个文件（文件夹亦视为文件）的各种属性 包括文件名，文件起始簇等等
+	{                                           
+		for(j=0;j<8;j++)
+     a7c:	aa 15       	cp	r26, r10
+     a7e:	bb 05       	cpc	r27, r11
+     a80:	19 f7       	brne	.-58     	; 0xa48 <Set_SD_File_Addr+0x18e>
+			check_file_name[j]=SPI_TransferByte(0xff);   //用4个unsigned long型数据来收集32位文件属性数据
+			temp1=SPI_TransferByte(0xff);temp1<<=8;check_file_name[j]|=temp1;
+			temp1=SPI_TransferByte(0xff);temp1<<=16;check_file_name[j]|=temp1;
+			temp1=SPI_TransferByte(0xff);temp1<<=24;check_file_name[j]|=temp1;
+		}
+		if((check_file_name[0]==0x454c4946)&&((check_file_name[1]<<24)==0x31000000)) //确认file1的起始地址
+     a82:	89 81       	ldd	r24, Y+1	; 0x01
+     a84:	9a 81       	ldd	r25, Y+2	; 0x02
+     a86:	ab 81       	ldd	r26, Y+3	; 0x03
+     a88:	bc 81       	ldd	r27, Y+4	; 0x04
+     a8a:	86 34       	cpi	r24, 0x46	; 70
+     a8c:	99 44       	sbci	r25, 0x49	; 73
+     a8e:	ac 44       	sbci	r26, 0x4C	; 76
+     a90:	b5 44       	sbci	r27, 0x45	; 69
+     a92:	09 f0       	breq	.+2      	; 0xa96 <Set_SD_File_Addr+0x1dc>
+     a94:	14 c1       	rjmp	.+552    	; 0xcbe <Set_SD_File_Addr+0x404>
+     a96:	8d 81       	ldd	r24, Y+5	; 0x05
+     a98:	9e 81       	ldd	r25, Y+6	; 0x06
+     a9a:	af 81       	ldd	r26, Y+7	; 0x07
+     a9c:	b8 85       	ldd	r27, Y+8	; 0x08
+     a9e:	b8 2f       	mov	r27, r24
+     aa0:	aa 27       	eor	r26, r26
+     aa2:	99 27       	eor	r25, r25
+     aa4:	88 27       	eor	r24, r24
+     aa6:	00 97       	sbiw	r24, 0x00	; 0
+     aa8:	a1 05       	cpc	r26, r1
+     aaa:	b1 43       	sbci	r27, 0x31	; 49
+     aac:	09 f0       	breq	.+2      	; 0xab0 <Set_SD_File_Addr+0x1f6>
+     aae:	4f c0       	rjmp	.+158    	; 0xb4e <Set_SD_File_Addr+0x294>
+		 {   
+			 FileClus=(check_file_name[5]<<16);
+     ab0:	8d 89       	ldd	r24, Y+21	; 0x15
+     ab2:	9e 89       	ldd	r25, Y+22	; 0x16
+     ab4:	af 89       	ldd	r26, Y+23	; 0x17
+     ab6:	b8 8d       	ldd	r27, Y+24	; 0x18
+     ab8:	dc 01       	movw	r26, r24
+     aba:	99 27       	eor	r25, r25
+     abc:	88 27       	eor	r24, r24
+			 FileClus|=(check_file_name[6]>>16);
+     abe:	49 8d       	ldd	r20, Y+25	; 0x19
+     ac0:	5a 8d       	ldd	r21, Y+26	; 0x1a
+     ac2:	6b 8d       	ldd	r22, Y+27	; 0x1b
+     ac4:	7c 8d       	ldd	r23, Y+28	; 0x1c
+     ac6:	ab 01       	movw	r20, r22
+     ac8:	66 27       	eor	r22, r22
+     aca:	77 27       	eor	r23, r23
+     acc:	84 2b       	or	r24, r20
+     ace:	95 2b       	or	r25, r21
+     ad0:	a6 2b       	or	r26, r22
+     ad2:	b7 2b       	or	r27, r23
+			 if(SDHC==0) File1Addr=RootDirAddr+(FileClus-RootClus)*512*SecPerClus;
+     ad4:	20 91 51 03 	lds	r18, 0x0351
+     ad8:	21 11       	cpse	r18, r1
+     ada:	1c c0       	rjmp	.+56     	; 0xb14 <Set_SD_File_Addr+0x25a>
+     adc:	9c 01       	movw	r18, r24
+     ade:	ad 01       	movw	r20, r26
+     ae0:	24 19       	sub	r18, r4
+     ae2:	35 09       	sbc	r19, r5
+     ae4:	46 09       	sbc	r20, r6
+     ae6:	57 09       	sbc	r21, r7
+     ae8:	69 a5       	ldd	r22, Y+41	; 0x29
+     aea:	7a a5       	ldd	r23, Y+42	; 0x2a
+     aec:	8b a5       	ldd	r24, Y+43	; 0x2b
+     aee:	9c a5       	ldd	r25, Y+44	; 0x2c
+     af0:	34 d4       	rcall	.+2152   	; 0x135a <__mulsi3>
+     af2:	29 a1       	ldd	r18, Y+33	; 0x21
+     af4:	3a a1       	ldd	r19, Y+34	; 0x22
+     af6:	4b a1       	ldd	r20, Y+35	; 0x23
+     af8:	5c a1       	ldd	r21, Y+36	; 0x24
+     afa:	26 0f       	add	r18, r22
+     afc:	37 1f       	adc	r19, r23
+     afe:	48 1f       	adc	r20, r24
+     b00:	59 1f       	adc	r21, r25
+     b02:	20 93 bf 01 	sts	0x01BF, r18
+     b06:	30 93 c0 01 	sts	0x01C0, r19
+     b0a:	40 93 c1 01 	sts	0x01C1, r20
+     b0e:	50 93 c2 01 	sts	0x01C2, r21
+     b12:	1d c0       	rjmp	.+58     	; 0xb4e <Set_SD_File_Addr+0x294>
+			 if(SDHC==1) File1Addr=(RootDirAddr+(FileClus-RootClus)*SecPerClus);      
+     b14:	21 30       	cpi	r18, 0x01	; 1
+     b16:	d9 f4       	brne	.+54     	; 0xb4e <Set_SD_File_Addr+0x294>
+     b18:	bc 01       	movw	r22, r24
+     b1a:	cd 01       	movw	r24, r26
+     b1c:	64 19       	sub	r22, r4
+     b1e:	75 09       	sbc	r23, r5
+     b20:	86 09       	sbc	r24, r6
+     b22:	97 09       	sbc	r25, r7
+     b24:	2d a1       	ldd	r18, Y+37	; 0x25
+     b26:	3e a1       	ldd	r19, Y+38	; 0x26
+     b28:	4f a1       	ldd	r20, Y+39	; 0x27
+     b2a:	58 a5       	ldd	r21, Y+40	; 0x28
+     b2c:	16 d4       	rcall	.+2092   	; 0x135a <__mulsi3>
+     b2e:	29 a1       	ldd	r18, Y+33	; 0x21
+     b30:	3a a1       	ldd	r19, Y+34	; 0x22
+     b32:	4b a1       	ldd	r20, Y+35	; 0x23
+     b34:	5c a1       	ldd	r21, Y+36	; 0x24
+     b36:	26 0f       	add	r18, r22
+     b38:	37 1f       	adc	r19, r23
+     b3a:	48 1f       	adc	r20, r24
+     b3c:	59 1f       	adc	r21, r25
+     b3e:	20 93 bf 01 	sts	0x01BF, r18
+     b42:	30 93 c0 01 	sts	0x01C0, r19
+     b46:	40 93 c1 01 	sts	0x01C1, r20
+     b4a:	50 93 c2 01 	sts	0x01C2, r21
+		 }
+		 if((check_file_name[0]==0x454c4946)&&((check_file_name[1]<<24)==0x32000000))//确认file2的起始地址
+     b4e:	8d 81       	ldd	r24, Y+5	; 0x05
+     b50:	9e 81       	ldd	r25, Y+6	; 0x06
+     b52:	af 81       	ldd	r26, Y+7	; 0x07
+     b54:	b8 85       	ldd	r27, Y+8	; 0x08
+     b56:	b8 2f       	mov	r27, r24
+     b58:	aa 27       	eor	r26, r26
+     b5a:	99 27       	eor	r25, r25
+     b5c:	88 27       	eor	r24, r24
+     b5e:	00 97       	sbiw	r24, 0x00	; 0
+     b60:	a1 05       	cpc	r26, r1
+     b62:	b2 43       	sbci	r27, 0x32	; 50
+     b64:	09 f0       	breq	.+2      	; 0xb68 <Set_SD_File_Addr+0x2ae>
+     b66:	4f c0       	rjmp	.+158    	; 0xc06 <Set_SD_File_Addr+0x34c>
+		 {
+			 FileClus=(check_file_name[5]<<16);
+     b68:	8d 89       	ldd	r24, Y+21	; 0x15
+     b6a:	9e 89       	ldd	r25, Y+22	; 0x16
+     b6c:	af 89       	ldd	r26, Y+23	; 0x17
+     b6e:	b8 8d       	ldd	r27, Y+24	; 0x18
+     b70:	dc 01       	movw	r26, r24
+     b72:	99 27       	eor	r25, r25
+     b74:	88 27       	eor	r24, r24
+			 FileClus|=(check_file_name[6]>>16);
+     b76:	49 8d       	ldd	r20, Y+25	; 0x19
+     b78:	5a 8d       	ldd	r21, Y+26	; 0x1a
+     b7a:	6b 8d       	ldd	r22, Y+27	; 0x1b
+     b7c:	7c 8d       	ldd	r23, Y+28	; 0x1c
+     b7e:	ab 01       	movw	r20, r22
+     b80:	66 27       	eor	r22, r22
+     b82:	77 27       	eor	r23, r23
+     b84:	84 2b       	or	r24, r20
+     b86:	95 2b       	or	r25, r21
+     b88:	a6 2b       	or	r26, r22
+     b8a:	b7 2b       	or	r27, r23
+			 if(SDHC==0) File2Addr=RootDirAddr+(FileClus-RootClus)*512*SecPerClus;
+     b8c:	20 91 51 03 	lds	r18, 0x0351
+     b90:	21 11       	cpse	r18, r1
+     b92:	1c c0       	rjmp	.+56     	; 0xbcc <Set_SD_File_Addr+0x312>
+     b94:	9c 01       	movw	r18, r24
+     b96:	ad 01       	movw	r20, r26
+     b98:	24 19       	sub	r18, r4
+     b9a:	35 09       	sbc	r19, r5
+     b9c:	46 09       	sbc	r20, r6
+     b9e:	57 09       	sbc	r21, r7
+     ba0:	69 a5       	ldd	r22, Y+41	; 0x29
+     ba2:	7a a5       	ldd	r23, Y+42	; 0x2a
+     ba4:	8b a5       	ldd	r24, Y+43	; 0x2b
+     ba6:	9c a5       	ldd	r25, Y+44	; 0x2c
+     ba8:	d8 d3       	rcall	.+1968   	; 0x135a <__mulsi3>
+     baa:	29 a1       	ldd	r18, Y+33	; 0x21
+     bac:	3a a1       	ldd	r19, Y+34	; 0x22
+     bae:	4b a1       	ldd	r20, Y+35	; 0x23
+     bb0:	5c a1       	ldd	r21, Y+36	; 0x24
+     bb2:	26 0f       	add	r18, r22
+     bb4:	37 1f       	adc	r19, r23
+     bb6:	48 1f       	adc	r20, r24
+     bb8:	59 1f       	adc	r21, r25
+     bba:	20 93 4d 03 	sts	0x034D, r18
+     bbe:	30 93 4e 03 	sts	0x034E, r19
+     bc2:	40 93 4f 03 	sts	0x034F, r20
+     bc6:	50 93 50 03 	sts	0x0350, r21
+     bca:	1d c0       	rjmp	.+58     	; 0xc06 <Set_SD_File_Addr+0x34c>
+			 if(SDHC==1) File2Addr=(RootDirAddr+(FileClus-RootClus)*SecPerClus);
+     bcc:	21 30       	cpi	r18, 0x01	; 1
+     bce:	d9 f4       	brne	.+54     	; 0xc06 <Set_SD_File_Addr+0x34c>
+     bd0:	bc 01       	movw	r22, r24
+     bd2:	cd 01       	movw	r24, r26
+     bd4:	64 19       	sub	r22, r4
+     bd6:	75 09       	sbc	r23, r5
+     bd8:	86 09       	sbc	r24, r6
+     bda:	97 09       	sbc	r25, r7
+     bdc:	2d a1       	ldd	r18, Y+37	; 0x25
+     bde:	3e a1       	ldd	r19, Y+38	; 0x26
+     be0:	4f a1       	ldd	r20, Y+39	; 0x27
+     be2:	58 a5       	ldd	r21, Y+40	; 0x28
+     be4:	ba d3       	rcall	.+1908   	; 0x135a <__mulsi3>
+     be6:	29 a1       	ldd	r18, Y+33	; 0x21
+     be8:	3a a1       	ldd	r19, Y+34	; 0x22
+     bea:	4b a1       	ldd	r20, Y+35	; 0x23
+     bec:	5c a1       	ldd	r21, Y+36	; 0x24
+     bee:	26 0f       	add	r18, r22
+     bf0:	37 1f       	adc	r19, r23
+     bf2:	48 1f       	adc	r20, r24
+     bf4:	59 1f       	adc	r21, r25
+     bf6:	20 93 4d 03 	sts	0x034D, r18
+     bfa:	30 93 4e 03 	sts	0x034E, r19
+     bfe:	40 93 4f 03 	sts	0x034F, r20
+     c02:	50 93 50 03 	sts	0x0350, r21
+		 }
+		 if((check_file_name[0]==0x454c4946)&&((check_file_name[1]<<24)==0x33000000))//确认file3的起始地址
+     c06:	8d 81       	ldd	r24, Y+5	; 0x05
+     c08:	9e 81       	ldd	r25, Y+6	; 0x06
+     c0a:	af 81       	ldd	r26, Y+7	; 0x07
+     c0c:	b8 85       	ldd	r27, Y+8	; 0x08
+     c0e:	b8 2f       	mov	r27, r24
+     c10:	aa 27       	eor	r26, r26
+     c12:	99 27       	eor	r25, r25
+     c14:	88 27       	eor	r24, r24
+     c16:	00 97       	sbiw	r24, 0x00	; 0
+     c18:	a1 05       	cpc	r26, r1
+     c1a:	b3 43       	sbci	r27, 0x33	; 51
+     c1c:	09 f0       	breq	.+2      	; 0xc20 <Set_SD_File_Addr+0x366>
+     c1e:	4f c0       	rjmp	.+158    	; 0xcbe <Set_SD_File_Addr+0x404>
+		 {
+			 FileClus=(check_file_name[5]<<16);
+     c20:	8d 89       	ldd	r24, Y+21	; 0x15
+     c22:	9e 89       	ldd	r25, Y+22	; 0x16
+     c24:	af 89       	ldd	r26, Y+23	; 0x17
+     c26:	b8 8d       	ldd	r27, Y+24	; 0x18
+     c28:	dc 01       	movw	r26, r24
+     c2a:	99 27       	eor	r25, r25
+     c2c:	88 27       	eor	r24, r24
+			 FileClus|=(check_file_name[6]>>16);
+     c2e:	49 8d       	ldd	r20, Y+25	; 0x19
+     c30:	5a 8d       	ldd	r21, Y+26	; 0x1a
+     c32:	6b 8d       	ldd	r22, Y+27	; 0x1b
+     c34:	7c 8d       	ldd	r23, Y+28	; 0x1c
+     c36:	ab 01       	movw	r20, r22
+     c38:	66 27       	eor	r22, r22
+     c3a:	77 27       	eor	r23, r23
+     c3c:	84 2b       	or	r24, r20
+     c3e:	95 2b       	or	r25, r21
+     c40:	a6 2b       	or	r26, r22
+     c42:	b7 2b       	or	r27, r23
+			 if(SDHC==0) File3Addr=RootDirAddr+(FileClus-RootClus)*512*SecPerClus;
+     c44:	20 91 51 03 	lds	r18, 0x0351
+     c48:	21 11       	cpse	r18, r1
+     c4a:	1c c0       	rjmp	.+56     	; 0xc84 <Set_SD_File_Addr+0x3ca>
+     c4c:	bc 01       	movw	r22, r24
+     c4e:	cd 01       	movw	r24, r26
+     c50:	64 19       	sub	r22, r4
+     c52:	75 09       	sbc	r23, r5
+     c54:	86 09       	sbc	r24, r6
+     c56:	97 09       	sbc	r25, r7
+     c58:	29 a5       	ldd	r18, Y+41	; 0x29
+     c5a:	3a a5       	ldd	r19, Y+42	; 0x2a
+     c5c:	4b a5       	ldd	r20, Y+43	; 0x2b
+     c5e:	5c a5       	ldd	r21, Y+44	; 0x2c
+     c60:	7c d3       	rcall	.+1784   	; 0x135a <__mulsi3>
+     c62:	29 a1       	ldd	r18, Y+33	; 0x21
+     c64:	3a a1       	ldd	r19, Y+34	; 0x22
+     c66:	4b a1       	ldd	r20, Y+35	; 0x23
+     c68:	5c a1       	ldd	r21, Y+36	; 0x24
+     c6a:	26 0f       	add	r18, r22
+     c6c:	37 1f       	adc	r19, r23
+     c6e:	48 1f       	adc	r20, r24
+     c70:	59 1f       	adc	r21, r25
+     c72:	20 93 43 02 	sts	0x0243, r18
+     c76:	30 93 44 02 	sts	0x0244, r19
+     c7a:	40 93 45 02 	sts	0x0245, r20
+     c7e:	50 93 46 02 	sts	0x0246, r21
+     c82:	1d c0       	rjmp	.+58     	; 0xcbe <Set_SD_File_Addr+0x404>
+			 if(SDHC==1) File3Addr=(RootDirAddr+(FileClus-RootClus)*SecPerClus);
+     c84:	21 30       	cpi	r18, 0x01	; 1
+     c86:	d9 f4       	brne	.+54     	; 0xcbe <Set_SD_File_Addr+0x404>
+     c88:	bc 01       	movw	r22, r24
+     c8a:	cd 01       	movw	r24, r26
+     c8c:	64 19       	sub	r22, r4
+     c8e:	75 09       	sbc	r23, r5
+     c90:	86 09       	sbc	r24, r6
+     c92:	97 09       	sbc	r25, r7
+     c94:	2d a1       	ldd	r18, Y+37	; 0x25
+     c96:	3e a1       	ldd	r19, Y+38	; 0x26
+     c98:	4f a1       	ldd	r20, Y+39	; 0x27
+     c9a:	58 a5       	ldd	r21, Y+40	; 0x28
+     c9c:	5e d3       	rcall	.+1724   	; 0x135a <__mulsi3>
+     c9e:	29 a1       	ldd	r18, Y+33	; 0x21
+     ca0:	3a a1       	ldd	r19, Y+34	; 0x22
+     ca2:	4b a1       	ldd	r20, Y+35	; 0x23
+     ca4:	5c a1       	ldd	r21, Y+36	; 0x24
+     ca6:	26 0f       	add	r18, r22
+     ca8:	37 1f       	adc	r19, r23
+     caa:	48 1f       	adc	r20, r24
+     cac:	59 1f       	adc	r21, r25
+     cae:	20 93 43 02 	sts	0x0243, r18
+     cb2:	30 93 44 02 	sts	0x0244, r19
+     cb6:	40 93 45 02 	sts	0x0245, r20
+     cba:	50 93 46 02 	sts	0x0246, r21
+     cbe:	31 e0       	ldi	r19, 0x01	; 1
+     cc0:	83 1a       	sub	r8, r19
+     cc2:	91 08       	sbc	r9, r1
+	
+	SD_SendCommand(SD_READ_BLOCK,RootDirAddr,0xFF); //发送CMD24 设定地址为根目录地址 读取根目录数据
+	SD_Enable();
+	//PORTC=SecPerClus;
+	while ((SPI_TransferByte(0xff))!= 0xfe); //接收SD卡发送数据标识 开始接收数据
+	for(i=0;i<16;i++)                        //根据FAT32文件系统结构，根目录表为32个字节一组表示一个文件（文件夹亦视为文件）的各种属性 包括文件名，文件起始簇等等
+     cc4:	21 f0       	breq	.+8      	; 0xcce <Set_SD_File_Addr+0x414>
+     cc6:	8e 01       	movw	r16, r28
+     cc8:	0f 5f       	subi	r16, 0xFF	; 255
+     cca:	1f 4f       	sbci	r17, 0xFF	; 255
+     ccc:	bd ce       	rjmp	.-646    	; 0xa48 <Set_SD_File_Addr+0x18e>
+			 if(SDHC==0) File3Addr=RootDirAddr+(FileClus-RootClus)*512*SecPerClus;
+			 if(SDHC==1) File3Addr=(RootDirAddr+(FileClus-RootClus)*SecPerClus);
+		 }
+		
+	}
+	SPI_TransferByte(0xff);
+     cce:	8f ef       	ldi	r24, 0xFF	; 255
+     cd0:	7c db       	rcall	.-2312   	; 0x3ca <SPI_TransferByte>
+	SPI_TransferByte(0xff);
+     cd2:	8f ef       	ldi	r24, 0xFF	; 255
+     cd4:	7a db       	rcall	.-2316   	; 0x3ca <SPI_TransferByte>
+	SD_Disable();
+     cd6:	c6 9a       	sbi	0x18, 6	; 24
+}
+     cd8:	ac 96       	adiw	r28, 0x2c	; 44
+     cda:	0f b6       	in	r0, 0x3f	; 63
+     cdc:	f8 94       	cli
+     cde:	de bf       	out	0x3e, r29	; 62
+     ce0:	0f be       	out	0x3f, r0	; 63
+     ce2:	cd bf       	out	0x3d, r28	; 61
+     ce4:	df 91       	pop	r29
+     ce6:	cf 91       	pop	r28
+     ce8:	1f 91       	pop	r17
+     cea:	0f 91       	pop	r16
+     cec:	ff 90       	pop	r15
+     cee:	ef 90       	pop	r14
+     cf0:	df 90       	pop	r13
+     cf2:	cf 90       	pop	r12
+     cf4:	bf 90       	pop	r11
+     cf6:	af 90       	pop	r10
+     cf8:	9f 90       	pop	r9
+     cfa:	8f 90       	pop	r8
+     cfc:	7f 90       	pop	r7
+     cfe:	6f 90       	pop	r6
+     d00:	5f 90       	pop	r5
+     d02:	4f 90       	pop	r4
+     d04:	3f 90       	pop	r3
+     d06:	08 95       	ret
+
+00000d08 <__vector_7>:
+/*外部中断服务程序*/
+ISR(INT6_vect)
+{   
+     d08:	1f 92       	push	r1
+     d0a:	0f 92       	push	r0
+     d0c:	0f b6       	in	r0, 0x3f	; 63
+     d0e:	0f 92       	push	r0
+     d10:	11 24       	eor	r1, r1
+     d12:	2f 93       	push	r18
+     d14:	8f 93       	push	r24
+     d16:	9f 93       	push	r25
+	if(w_timeup==0) //当计时未结束时按下按钮重置计时值并选择数据录入的文件
+     d18:	80 91 3d 01 	lds	r24, 0x013D
+     d1c:	90 91 3e 01 	lds	r25, 0x013E
+     d20:	89 2b       	or	r24, r25
+     d22:	39 f5       	brne	.+78     	; 0xd72 <__vector_7+0x6a>
+	{
+		TCNT1=0;
+     d24:	1d bc       	out	0x2d, r1	; 45
+     d26:	1c bc       	out	0x2c, r1	; 44
+     d28:	2f e7       	ldi	r18, 0x7F	; 127
+     d2a:	88 e3       	ldi	r24, 0x38	; 56
+     d2c:	91 e0       	ldi	r25, 0x01	; 1
+     d2e:	21 50       	subi	r18, 0x01	; 1
+     d30:	80 40       	sbci	r24, 0x00	; 0
+     d32:	90 40       	sbci	r25, 0x00	; 0
+     d34:	e1 f7       	brne	.-8      	; 0xd2e <__vector_7+0x26>
+     d36:	00 c0       	rjmp	.+0      	; 0xd38 <__vector_7+0x30>
+     d38:	00 00       	nop
+		_delay_ms(50);
+		w_f++;
+     d3a:	80 91 00 01 	lds	r24, 0x0100
+     d3e:	90 91 01 01 	lds	r25, 0x0101
+     d42:	01 96       	adiw	r24, 0x01	; 1
+		if(w_f==4) w_f=1;
+     d44:	84 30       	cpi	r24, 0x04	; 4
+     d46:	91 05       	cpc	r25, r1
+     d48:	29 f0       	breq	.+10     	; 0xd54 <__vector_7+0x4c>
+{   
+	if(w_timeup==0) //当计时未结束时按下按钮重置计时值并选择数据录入的文件
+	{
+		TCNT1=0;
+		_delay_ms(50);
+		w_f++;
+     d4a:	90 93 01 01 	sts	0x0101, r25
+     d4e:	80 93 00 01 	sts	0x0100, r24
+     d52:	06 c0       	rjmp	.+12     	; 0xd60 <__vector_7+0x58>
+		if(w_f==4) w_f=1;
+     d54:	81 e0       	ldi	r24, 0x01	; 1
+     d56:	90 e0       	ldi	r25, 0x00	; 0
+     d58:	90 93 01 01 	sts	0x0101, r25
+     d5c:	80 93 00 01 	sts	0x0100, r24
+     d60:	2f e7       	ldi	r18, 0x7F	; 127
+     d62:	88 e3       	ldi	r24, 0x38	; 56
+     d64:	91 e0       	ldi	r25, 0x01	; 1
+     d66:	21 50       	subi	r18, 0x01	; 1
+     d68:	80 40       	sbci	r24, 0x00	; 0
+     d6a:	90 40       	sbci	r25, 0x00	; 0
+     d6c:	e1 f7       	brne	.-8      	; 0xd66 <__vector_7+0x5e>
+     d6e:	00 c0       	rjmp	.+0      	; 0xd70 <__vector_7+0x68>
+     d70:	00 00       	nop
+		_delay_ms(50);
+		
+	}
+	
+	if(w_timeup==1) //当计时结束时按下按钮就结束数据录入
+     d72:	80 91 3d 01 	lds	r24, 0x013D
+     d76:	90 91 3e 01 	lds	r25, 0x013E
+     d7a:	01 97       	sbiw	r24, 0x01	; 1
+     d7c:	a1 f4       	brne	.+40     	; 0xda6 <__vector_7+0x9e>
+	{
+		button_stop=1;
+     d7e:	81 e0       	ldi	r24, 0x01	; 1
+     d80:	80 93 3c 01 	sts	0x013C, r24
+		w_time=w_i;
+     d84:	80 91 47 02 	lds	r24, 0x0247
+     d88:	90 91 48 02 	lds	r25, 0x0248
+     d8c:	90 93 03 01 	sts	0x0103, r25
+     d90:	80 93 02 01 	sts	0x0102, r24
+     d94:	2f e7       	ldi	r18, 0x7F	; 127
+     d96:	88 e3       	ldi	r24, 0x38	; 56
+     d98:	91 e0       	ldi	r25, 0x01	; 1
+     d9a:	21 50       	subi	r18, 0x01	; 1
+     d9c:	80 40       	sbci	r24, 0x00	; 0
+     d9e:	90 40       	sbci	r25, 0x00	; 0
+     da0:	e1 f7       	brne	.-8      	; 0xd9a <__vector_7+0x92>
+     da2:	00 c0       	rjmp	.+0      	; 0xda4 <__vector_7+0x9c>
+     da4:	00 00       	nop
+		_delay_ms(50);
+	}
+}
+     da6:	9f 91       	pop	r25
+     da8:	8f 91       	pop	r24
+     daa:	2f 91       	pop	r18
+     dac:	0f 90       	pop	r0
+     dae:	0f be       	out	0x3f, r0	; 63
+     db0:	0f 90       	pop	r0
+     db2:	1f 90       	pop	r1
+     db4:	18 95       	reti
+
+00000db6 <__vector_14>:
+/*计时器中断服务程序*/
+ISR(TIMER1_OVF_vect)
+{
+     db6:	1f 92       	push	r1
+     db8:	0f 92       	push	r0
+     dba:	0f b6       	in	r0, 0x3f	; 63
+     dbc:	0f 92       	push	r0
+     dbe:	11 24       	eor	r1, r1
+     dc0:	8f 93       	push	r24
+     dc2:	9f 93       	push	r25
+	w_timeup=1; //计时结束
+     dc4:	81 e0       	ldi	r24, 0x01	; 1
+     dc6:	90 e0       	ldi	r25, 0x00	; 0
+     dc8:	90 93 3e 01 	sts	0x013E, r25
+     dcc:	80 93 3d 01 	sts	0x013D, r24
+}
+     dd0:	9f 91       	pop	r25
+     dd2:	8f 91       	pop	r24
+     dd4:	0f 90       	pop	r0
+     dd6:	0f be       	out	0x3f, r0	; 63
+     dd8:	0f 90       	pop	r0
+     dda:	1f 90       	pop	r1
+     ddc:	18 95       	reti
+
+00000dde <main>:
+void main(void)
+{   
+     dde:	3f 92       	push	r3
+     de0:	4f 92       	push	r4
+     de2:	5f 92       	push	r5
+     de4:	6f 92       	push	r6
+     de6:	7f 92       	push	r7
+     de8:	8f 92       	push	r8
+     dea:	9f 92       	push	r9
+     dec:	af 92       	push	r10
+     dee:	bf 92       	push	r11
+     df0:	cf 92       	push	r12
+     df2:	df 92       	push	r13
+     df4:	ef 92       	push	r14
+     df6:	ff 92       	push	r15
+     df8:	0f 93       	push	r16
+     dfa:	1f 93       	push	r17
+     dfc:	cf 93       	push	r28
+     dfe:	df 93       	push	r29
+     e00:	cd b7       	in	r28, 0x3d	; 61
+     e02:	de b7       	in	r29, 0x3e	; 62
+     e04:	c1 54       	subi	r28, 0x41	; 65
+     e06:	d1 09       	sbc	r29, r1
+     e08:	0f b6       	in	r0, 0x3f	; 63
+     e0a:	f8 94       	cli
+     e0c:	de bf       	out	0x3e, r29	; 62
+     e0e:	0f be       	out	0x3f, r0	; 63
+     e10:	cd bf       	out	0x3d, r28	; 61
+	 unsigned int i=0,dis_h,dis0_h,dis1_h,dis_t,dis0_t,dis1_t,adc_data,temp;
+	 unsigned char led=0;
+	 
+	 unsigned char T[]={"T:"};
+     e12:	84 e5       	ldi	r24, 0x54	; 84
+     e14:	9a e3       	ldi	r25, 0x3A	; 58
+     e16:	a0 e0       	ldi	r26, 0x00	; 0
+     e18:	89 83       	std	Y+1, r24	; 0x01
+     e1a:	9a 83       	std	Y+2, r25	; 0x02
+     e1c:	ab 83       	std	Y+3, r26	; 0x03
+	 unsigned char H[]={"H:"};
+     e1e:	88 e4       	ldi	r24, 0x48	; 72
+     e20:	9a e3       	ldi	r25, 0x3A	; 58
+     e22:	a0 e0       	ldi	r26, 0x00	; 0
+     e24:	8c 83       	std	Y+4, r24	; 0x04
+     e26:	9d 83       	std	Y+5, r25	; 0x05
+     e28:	ae 83       	std	Y+6, r26	; 0x06
+	 unsigned char AI[]={"AI:    v"};	 
+     e2a:	89 e0       	ldi	r24, 0x09	; 9
+     e2c:	e4 e0       	ldi	r30, 0x04	; 4
+     e2e:	f1 e0       	ldi	r31, 0x01	; 1
+     e30:	de 01       	movw	r26, r28
+     e32:	17 96       	adiw	r26, 0x07	; 7
+     e34:	01 90       	ld	r0, Z+
+     e36:	0d 92       	st	X+, r0
+     e38:	8a 95       	dec	r24
+     e3a:	e1 f7       	brne	.-8      	; 0xe34 <main+0x56>
+	 unsigned char DI[]={"DI:"};	 
+     e3c:	84 e4       	ldi	r24, 0x44	; 68
+     e3e:	99 e4       	ldi	r25, 0x49	; 73
+     e40:	aa e3       	ldi	r26, 0x3A	; 58
+     e42:	b0 e0       	ldi	r27, 0x00	; 0
+     e44:	88 8b       	std	Y+16, r24	; 0x10
+     e46:	99 8b       	std	Y+17, r25	; 0x11
+     e48:	aa 8b       	std	Y+18, r26	; 0x12
+     e4a:	bb 8b       	std	Y+19, r27	; 0x13
+	 unsigned char dht_data_temp_t,dht_data_temp_h;
+	 
+	 unsigned char cnm[]={"STOP COLLECTING "};
+     e4c:	81 e1       	ldi	r24, 0x11	; 17
+     e4e:	ed e0       	ldi	r30, 0x0D	; 13
+     e50:	f1 e0       	ldi	r31, 0x01	; 1
+     e52:	de 01       	movw	r26, r28
+     e54:	54 96       	adiw	r26, 0x14	; 20
+     e56:	01 90       	ld	r0, Z+
+     e58:	0d 92       	st	X+, r0
+     e5a:	8a 95       	dec	r24
+     e5c:	e1 f7       	brne	.-8      	; 0xe56 <main+0x78>
+	 unsigned char clr[]={"                "}; //设置需要的变量以及LCD的基本显示内容
+     e5e:	81 e1       	ldi	r24, 0x11	; 17
+     e60:	ee e1       	ldi	r30, 0x1E	; 30
+     e62:	f1 e0       	ldi	r31, 0x01	; 1
+     e64:	de 01       	movw	r26, r28
+     e66:	95 96       	adiw	r26, 0x25	; 37
+     e68:	01 90       	ld	r0, Z+
+     e6a:	0d 92       	st	X+, r0
+     e6c:	8a 95       	dec	r24
+     e6e:	e1 f7       	brne	.-8      	; 0xe68 <main+0x8a>
+
+	 
+	
+	 DDRD=0xff;
+     e70:	8f ef       	ldi	r24, 0xFF	; 255
+     e72:	81 bb       	out	0x11, r24	; 17
+	 PORTD=0xff;
+     e74:	82 bb       	out	0x12, r24	; 18
+	 DDRG=0xff;
+     e76:	80 93 64 00 	sts	0x0064, r24
+	 PORTG=0xff; //lcd端口初始化
+     e7a:	80 93 65 00 	sts	0x0065, r24
+	 
+	 DDRC=0XFF;
+     e7e:	84 bb       	out	0x14, r24	; 20
+	 PORTC=0X7f;  //流水灯端口初始化
+     e80:	8f e7       	ldi	r24, 0x7F	; 127
+     e82:	85 bb       	out	0x15, r24	; 21
+	 
+	 
+     SD_Port_Init();//SD卡端口初始化
+     e84:	70 da       	rcall	.-2848   	; 0x366 <SD_Port_Init>
+     SD_reset();   //SD卡复位
+     e86:	e6 da       	rcall	.-2612   	; 0x454 <SD_reset>
+	 SD_Init(); //SD卡初始化
+     e88:	f8 da       	rcall	.-2576   	; 0x47a <SD_Init>
+	 SPCR=0X50;  //开始高速读写
+     e8a:	80 e5       	ldi	r24, 0x50	; 80
+     e8c:	8d b9       	out	0x0d, r24	; 13
+	 SD_Set_CRC();  //屏蔽CRC校验
+     e8e:	55 db       	rcall	.-2390   	; 0x53a <SD_Set_CRC>
+	 SD_Set_data_size(); //设置数据块大小
+     e90:	46 db       	rcall	.-2420   	; 0x51e <SD_Set_data_size>
+	 //SD_erase(w_addr,w_addr+52428800*2);
+	 Set_SD_File_Addr();  //确认file1~3地址
+     e92:	13 dd       	rcall	.-1498   	; 0x8ba <Set_SD_File_Addr>
+	if(SDHC==0)
+     e94:	80 91 51 03 	lds	r24, 0x0351
+     e98:	81 11       	cpse	r24, r1
+     e9a:	2a c0       	rjmp	.+84     	; 0xef0 <main+0x112>
+	{
+		SD_erase(File1Addr,File1Addr+52428800-512);
+     e9c:	60 91 bf 01 	lds	r22, 0x01BF
+     ea0:	70 91 c0 01 	lds	r23, 0x01C0
+     ea4:	80 91 c1 01 	lds	r24, 0x01C1
+     ea8:	90 91 c2 01 	lds	r25, 0x01C2
+     eac:	9b 01       	movw	r18, r22
+     eae:	ac 01       	movw	r20, r24
+     eb0:	32 50       	subi	r19, 0x02	; 2
+     eb2:	40 4e       	sbci	r20, 0xE0	; 224
+     eb4:	5c 4f       	sbci	r21, 0xFC	; 252
+     eb6:	4e db       	rcall	.-2404   	; 0x554 <SD_erase>
+		SD_erase(File2Addr,File2Addr+52428800-512);
+     eb8:	60 91 4d 03 	lds	r22, 0x034D
+     ebc:	70 91 4e 03 	lds	r23, 0x034E
+     ec0:	80 91 4f 03 	lds	r24, 0x034F
+     ec4:	90 91 50 03 	lds	r25, 0x0350
+     ec8:	9b 01       	movw	r18, r22
+     eca:	ac 01       	movw	r20, r24
+     ecc:	32 50       	subi	r19, 0x02	; 2
+     ece:	40 4e       	sbci	r20, 0xE0	; 224
+     ed0:	5c 4f       	sbci	r21, 0xFC	; 252
+     ed2:	40 db       	rcall	.-2432   	; 0x554 <SD_erase>
+		SD_erase(File3Addr,File3Addr+52428800-512);//清除已有数据
+     ed4:	60 91 43 02 	lds	r22, 0x0243
+     ed8:	70 91 44 02 	lds	r23, 0x0244
+     edc:	80 91 45 02 	lds	r24, 0x0245
+     ee0:	90 91 46 02 	lds	r25, 0x0246
+     ee4:	9b 01       	movw	r18, r22
+     ee6:	ac 01       	movw	r20, r24
+     ee8:	32 50       	subi	r19, 0x02	; 2
+     eea:	40 4e       	sbci	r20, 0xE0	; 224
+     eec:	5c 4f       	sbci	r21, 0xFC	; 252
+     eee:	32 db       	rcall	.-2460   	; 0x554 <SD_erase>
+		
+	}
+	
+	if(SDHC==1)
+     ef0:	80 91 51 03 	lds	r24, 0x0351
+     ef4:	81 30       	cpi	r24, 0x01	; 1
+     ef6:	69 f5       	brne	.+90     	; 0xf52 <main+0x174>
+	{
+		SD_erase(File1Addr,File1Addr+102399);
+     ef8:	60 91 bf 01 	lds	r22, 0x01BF
+     efc:	70 91 c0 01 	lds	r23, 0x01C0
+     f00:	80 91 c1 01 	lds	r24, 0x01C1
+     f04:	90 91 c2 01 	lds	r25, 0x01C2
+     f08:	9b 01       	movw	r18, r22
+     f0a:	ac 01       	movw	r20, r24
+     f0c:	21 50       	subi	r18, 0x01	; 1
+     f0e:	30 47       	sbci	r19, 0x70	; 112
+     f10:	4e 4f       	sbci	r20, 0xFE	; 254
+     f12:	5f 4f       	sbci	r21, 0xFF	; 255
+     f14:	1f db       	rcall	.-2498   	; 0x554 <SD_erase>
+		SD_erase(File2Addr,File2Addr+102399);
+     f16:	60 91 4d 03 	lds	r22, 0x034D
+     f1a:	70 91 4e 03 	lds	r23, 0x034E
+     f1e:	80 91 4f 03 	lds	r24, 0x034F
+     f22:	90 91 50 03 	lds	r25, 0x0350
+     f26:	9b 01       	movw	r18, r22
+     f28:	ac 01       	movw	r20, r24
+     f2a:	21 50       	subi	r18, 0x01	; 1
+     f2c:	30 47       	sbci	r19, 0x70	; 112
+     f2e:	4e 4f       	sbci	r20, 0xFE	; 254
+     f30:	5f 4f       	sbci	r21, 0xFF	; 255
+     f32:	10 db       	rcall	.-2528   	; 0x554 <SD_erase>
+		SD_erase(File3Addr,File3Addr+102399);//清除已有数据
+     f34:	60 91 43 02 	lds	r22, 0x0243
+     f38:	70 91 44 02 	lds	r23, 0x0244
+     f3c:	80 91 45 02 	lds	r24, 0x0245
+     f40:	90 91 46 02 	lds	r25, 0x0246
+     f44:	9b 01       	movw	r18, r22
+     f46:	ac 01       	movw	r20, r24
+     f48:	21 50       	subi	r18, 0x01	; 1
+     f4a:	30 47       	sbci	r19, 0x70	; 112
+     f4c:	4e 4f       	sbci	r20, 0xFE	; 254
+     f4e:	5f 4f       	sbci	r21, 0xFF	; 255
+     f50:	01 db       	rcall	.-2558   	; 0x554 <SD_erase>
+	}
+	
+	 
+	 LcdInit(); //LCD初始化
+     f52:	31 d9       	rcall	.-3486   	; 0x1b6 <LcdInit>
+	 Ext_Int_Init();//外部中断初始化
+     f54:	22 da       	rcall	.-3004   	; 0x39a <Ext_Int_Init>
+	 TC1_Init();   //定时器初始化
+     f56:	29 da       	rcall	.-2990   	; 0x3aa <TC1_Init>
+	 sei();    //开全局中断
+     f58:	78 94       	sei
+	  
+	 ADC_Init();  //ad转换初始化
+     f5a:	32 da       	rcall	.-2972   	; 0x3c0 <ADC_Init>
+	   
+	 while(w_timeup==0)  //计时未结束时 显示文件选择界面并用按钮进行选择
+     f5c:	80 91 3d 01 	lds	r24, 0x013D
+     f60:	90 91 3e 01 	lds	r25, 0x013E
+     f64:	89 2b       	or	r24, r25
+     f66:	09 f0       	breq	.+2      	; 0xf6a <main+0x18c>
+     f68:	62 c0       	rjmp	.+196    	; 0x102e <main+0x250>
+	 {
+		 unsigned char wait[]={"file choose"};
+     f6a:	0f 2e       	mov	r0, r31
+     f6c:	fc e0       	ldi	r31, 0x0C	; 12
+     f6e:	ff 2e       	mov	r15, r31
+     f70:	f0 2d       	mov	r31, r0
+		 WriteChar(1,0,11,wait);
+		 WriteNum(1,13,w_f+48);	
+     f72:	00 e0       	ldi	r16, 0x00	; 0
+     f74:	11 e0       	ldi	r17, 0x01	; 1
+	  
+	 ADC_Init();  //ad转换初始化
+	   
+	 while(w_timeup==0)  //计时未结束时 显示文件选择界面并用按钮进行选择
+	 {
+		 unsigned char wait[]={"file choose"};
+     f76:	ef e2       	ldi	r30, 0x2F	; 47
+     f78:	f1 e0       	ldi	r31, 0x01	; 1
+     f7a:	de 01       	movw	r26, r28
+     f7c:	d6 96       	adiw	r26, 0x36	; 54
+     f7e:	8f 2d       	mov	r24, r15
+     f80:	01 90       	ld	r0, Z+
+     f82:	0d 92       	st	X+, r0
+     f84:	8a 95       	dec	r24
+     f86:	e1 f7       	brne	.-8      	; 0xf80 <main+0x1a2>
+		 WriteChar(1,0,11,wait);
+     f88:	9e 01       	movw	r18, r28
+     f8a:	2a 5c       	subi	r18, 0xCA	; 202
+     f8c:	3f 4f       	sbci	r19, 0xFF	; 255
+     f8e:	4b e0       	ldi	r20, 0x0B	; 11
+     f90:	50 e0       	ldi	r21, 0x00	; 0
+     f92:	60 e0       	ldi	r22, 0x00	; 0
+     f94:	81 e0       	ldi	r24, 0x01	; 1
+     f96:	9d d9       	rcall	.-3270   	; 0x2d2 <WriteChar>
+		 WriteNum(1,13,w_f+48);	
+     f98:	d8 01       	movw	r26, r16
+     f9a:	4c 91       	ld	r20, X
+     f9c:	40 5d       	subi	r20, 0xD0	; 208
+     f9e:	6d e0       	ldi	r22, 0x0D	; 13
+     fa0:	81 e0       	ldi	r24, 0x01	; 1
+     fa2:	5e d9       	rcall	.-3396   	; 0x260 <WriteNum>
+		 if(w_f==1) w_addr=File1Addr;
+     fa4:	80 91 00 01 	lds	r24, 0x0100
+     fa8:	90 91 01 01 	lds	r25, 0x0101
+     fac:	81 30       	cpi	r24, 0x01	; 1
+     fae:	91 05       	cpc	r25, r1
+     fb0:	89 f4       	brne	.+34     	; 0xfd4 <main+0x1f6>
+     fb2:	80 91 bf 01 	lds	r24, 0x01BF
+     fb6:	90 91 c0 01 	lds	r25, 0x01C0
+     fba:	a0 91 c1 01 	lds	r26, 0x01C1
+     fbe:	b0 91 c2 01 	lds	r27, 0x01C2
+     fc2:	80 93 49 02 	sts	0x0249, r24
+     fc6:	90 93 4a 02 	sts	0x024A, r25
+     fca:	a0 93 4b 02 	sts	0x024B, r26
+     fce:	b0 93 4c 02 	sts	0x024C, r27
+     fd2:	26 c0       	rjmp	.+76     	; 0x1020 <main+0x242>
+		 if(w_f==2) w_addr=File2Addr;
+     fd4:	82 30       	cpi	r24, 0x02	; 2
+     fd6:	91 05       	cpc	r25, r1
+     fd8:	89 f4       	brne	.+34     	; 0xffc <main+0x21e>
+     fda:	80 91 4d 03 	lds	r24, 0x034D
+     fde:	90 91 4e 03 	lds	r25, 0x034E
+     fe2:	a0 91 4f 03 	lds	r26, 0x034F
+     fe6:	b0 91 50 03 	lds	r27, 0x0350
+     fea:	80 93 49 02 	sts	0x0249, r24
+     fee:	90 93 4a 02 	sts	0x024A, r25
+     ff2:	a0 93 4b 02 	sts	0x024B, r26
+     ff6:	b0 93 4c 02 	sts	0x024C, r27
+     ffa:	12 c0       	rjmp	.+36     	; 0x1020 <main+0x242>
+		 if(w_f==3) w_addr=File3Addr;
+     ffc:	03 97       	sbiw	r24, 0x03	; 3
+     ffe:	81 f4       	brne	.+32     	; 0x1020 <main+0x242>
+    1000:	80 91 43 02 	lds	r24, 0x0243
+    1004:	90 91 44 02 	lds	r25, 0x0244
+    1008:	a0 91 45 02 	lds	r26, 0x0245
+    100c:	b0 91 46 02 	lds	r27, 0x0246
+    1010:	80 93 49 02 	sts	0x0249, r24
+    1014:	90 93 4a 02 	sts	0x024A, r25
+    1018:	a0 93 4b 02 	sts	0x024B, r26
+    101c:	b0 93 4c 02 	sts	0x024C, r27
+	 TC1_Init();   //定时器初始化
+	 sei();    //开全局中断
+	  
+	 ADC_Init();  //ad转换初始化
+	   
+	 while(w_timeup==0)  //计时未结束时 显示文件选择界面并用按钮进行选择
+    1020:	80 91 3d 01 	lds	r24, 0x013D
+    1024:	90 91 3e 01 	lds	r25, 0x013E
+    1028:	89 2b       	or	r24, r25
+    102a:	09 f4       	brne	.+2      	; 0x102e <main+0x250>
+    102c:	a4 cf       	rjmp	.-184    	; 0xf76 <main+0x198>
+		 WriteNum(1,13,w_f+48);	
+		 if(w_f==1) w_addr=File1Addr;
+		 if(w_f==2) w_addr=File2Addr;
+		 if(w_f==3) w_addr=File3Addr;
+	 }
+	 TIMSK&= ~(1<<TOIE1);//关定时器中断
+    102e:	87 b7       	in	r24, 0x37	; 55
+    1030:	8b 7f       	andi	r24, 0xFB	; 251
+    1032:	87 bf       	out	0x37, r24	; 55
+	 LcdInit();  //清屏
+    1034:	c0 d8       	rcall	.-3712   	; 0x1b6 <LcdInit>
+	w_timeup=1; //计时结束
+}
+void main(void)
+{   
+	 unsigned int i=0,dis_h,dis0_h,dis1_h,dis_t,dis0_t,dis1_t,adc_data,temp;
+	 unsigned char led=0;
+    1036:	b1 2c       	mov	r11, r1
+{
+	w_timeup=1; //计时结束
+}
+void main(void)
+{   
+	 unsigned int i=0,dis_h,dis0_h,dis1_h,dis_t,dis0_t,dis1_t,adc_data,temp;
+    1038:	00 e0       	ldi	r16, 0x00	; 0
+    103a:	10 e0       	ldi	r17, 0x00	; 0
+		 
+		 
+		 
+		 adc_data=Collect_ADC_Data();
+		 w_data_adc_int[i]=(adc_data)/100;
+		 w_data_adc_sn1[i]=(adc_data-(w_data_adc_int[i]*100))/10;
+    103c:	0f 2e       	mov	r0, r31
+    103e:	fc e9       	ldi	r31, 0x9C	; 156
+    1040:	af 2e       	mov	r10, r31
+    1042:	f0 2d       	mov	r31, r0
+		 
+		 w_data_button[i]=Collect_BUTTON_Data();
+		 WriteChar(2,9,3,DI);
+		 WriteNum(2,12,(w_data_button[i]+48)); //显示按钮数据
+		  
+	     PORTC=(~(0x01<<led));
+    1044:	88 24       	eor	r8, r8
+    1046:	83 94       	inc	r8
+    1048:	91 2c       	mov	r9, r1
+	   if(i==32)   //数据够一个数据块的收据后 写入SD卡
+		{
+		 PORTC=SD_Write();
+		 if(SDHC==0)w_addr=w_addr+512;
+		 if(SDHC==1)w_addr=w_addr+1;
+		 i=0;  
+    104a:	51 2c       	mov	r5, r1
+    104c:	41 2c       	mov	r4, r1
+		 if(w_f==2) w_addr=File2Addr;
+		 if(w_f==3) w_addr=File3Addr;
+	 }
+	 TIMSK&= ~(1<<TOIE1);//关定时器中断
+	 LcdInit();  //清屏
+	 while(w_timeup==1)//计时结束 开始收集收据
+    104e:	53 c1       	rjmp	.+678    	; 0x12f6 <__stack+0x1f7>
+	 { 
+		if(button_stop==0) //未按下结束按钮时
+    1050:	80 91 3c 01 	lds	r24, 0x013C
+    1054:	81 11       	cpse	r24, r1
+    1056:	07 c1       	rjmp	.+526    	; 0x1266 <__stack+0x167>
+	    {
+		 temp=(Collect_DHT_Data());
+    1058:	a1 da       	rcall	.-2750   	; 0x59c <Collect_DHT_Data>
+    105a:	79 2e       	mov	r7, r25
+		 dht_data_temp_t=temp;
+		 w_data_t[i]=data_to_dec(dht_data_temp_t);
+    105c:	1f db       	rcall	.-2498   	; 0x69c <data_to_dec>
+    105e:	7c 01       	movw	r14, r24
+    1060:	68 01       	movw	r12, r16
+    1062:	cc 0c       	add	r12, r12
+    1064:	dd 1c       	adc	r13, r13
+    1066:	f6 01       	movw	r30, r12
+    1068:	ee 52       	subi	r30, 0x2E	; 46
+    106a:	fc 4f       	sbci	r31, 0xFC	; 252
+    106c:	91 83       	std	Z+1, r25	; 0x01
+    106e:	80 83       	st	Z, r24
+	     dis_t=w_data_t[i];
+	     dis0_t=dis_t%10;
+	     dis1_t=dis_t/10;
+	     WriteChar(1,0,2,T);
+    1070:	9e 01       	movw	r18, r28
+    1072:	2f 5f       	subi	r18, 0xFF	; 255
+    1074:	3f 4f       	sbci	r19, 0xFF	; 255
+    1076:	42 e0       	ldi	r20, 0x02	; 2
+    1078:	50 e0       	ldi	r21, 0x00	; 0
+    107a:	60 e0       	ldi	r22, 0x00	; 0
+    107c:	81 e0       	ldi	r24, 0x01	; 1
+    107e:	29 d9       	rcall	.-3502   	; 0x2d2 <WriteChar>
+	    {
+		 temp=(Collect_DHT_Data());
+		 dht_data_temp_t=temp;
+		 w_data_t[i]=data_to_dec(dht_data_temp_t);
+	     dis_t=w_data_t[i];
+	     dis0_t=dis_t%10;
+    1080:	97 01       	movw	r18, r14
+    1082:	ad ec       	ldi	r26, 0xCD	; 205
+    1084:	bc ec       	ldi	r27, 0xCC	; 204
+    1086:	81 d1       	rcall	.+770    	; 0x138a <__umulhisi3>
+    1088:	9c 01       	movw	r18, r24
+    108a:	36 95       	lsr	r19
+    108c:	27 95       	ror	r18
+    108e:	36 95       	lsr	r19
+    1090:	27 95       	ror	r18
+    1092:	36 95       	lsr	r19
+    1094:	27 95       	ror	r18
+    1096:	c9 01       	movw	r24, r18
+    1098:	88 0f       	add	r24, r24
+    109a:	99 1f       	adc	r25, r25
+    109c:	22 0f       	add	r18, r18
+    109e:	33 1f       	adc	r19, r19
+    10a0:	22 0f       	add	r18, r18
+    10a2:	33 1f       	adc	r19, r19
+    10a4:	22 0f       	add	r18, r18
+    10a6:	33 1f       	adc	r19, r19
+    10a8:	28 0f       	add	r18, r24
+    10aa:	39 1f       	adc	r19, r25
+    10ac:	a7 01       	movw	r20, r14
+    10ae:	42 1b       	sub	r20, r18
+    10b0:	53 0b       	sbc	r21, r19
+	     dis1_t=dis_t/10;
+	     WriteChar(1,0,2,T);
+	     WriteNum(1,2,dis0_t+48);
+    10b2:	40 5d       	subi	r20, 0xD0	; 208
+    10b4:	62 e0       	ldi	r22, 0x02	; 2
+    10b6:	81 e0       	ldi	r24, 0x01	; 1
+    10b8:	d3 d8       	rcall	.-3674   	; 0x260 <WriteNum>
+		 temp=(Collect_DHT_Data());
+		 dht_data_temp_t=temp;
+		 w_data_t[i]=data_to_dec(dht_data_temp_t);
+	     dis_t=w_data_t[i];
+	     dis0_t=dis_t%10;
+	     dis1_t=dis_t/10;
+    10ba:	97 01       	movw	r18, r14
+    10bc:	ad ec       	ldi	r26, 0xCD	; 205
+    10be:	bc ec       	ldi	r27, 0xCC	; 204
+    10c0:	64 d1       	rcall	.+712    	; 0x138a <__umulhisi3>
+    10c2:	96 95       	lsr	r25
+    10c4:	87 95       	ror	r24
+    10c6:	96 95       	lsr	r25
+    10c8:	87 95       	ror	r24
+    10ca:	96 95       	lsr	r25
+    10cc:	87 95       	ror	r24
+	     WriteChar(1,0,2,T);
+	     WriteNum(1,2,dis0_t+48);
+	     WriteNum(1,3,dis1_t+48);
+    10ce:	40 e3       	ldi	r20, 0x30	; 48
+    10d0:	48 0f       	add	r20, r24
+    10d2:	63 e0       	ldi	r22, 0x03	; 3
+    10d4:	81 e0       	ldi	r24, 0x01	; 1
+    10d6:	c4 d8       	rcall	.-3704   	; 0x260 <WriteNum>
+	     WriteNum(1,4,0xdf);
+    10d8:	4f ed       	ldi	r20, 0xDF	; 223
+    10da:	64 e0       	ldi	r22, 0x04	; 4
+    10dc:	81 e0       	ldi	r24, 0x01	; 1
+    10de:	c0 d8       	rcall	.-3712   	; 0x260 <WriteNum>
+	     WriteNum(1,5,0x43);  //显示温度数据
+    10e0:	43 e4       	ldi	r20, 0x43	; 67
+    10e2:	65 e0       	ldi	r22, 0x05	; 5
+    10e4:	81 e0       	ldi	r24, 0x01	; 1
+    10e6:	bc d8       	rcall	.-3720   	; 0x260 <WriteNum>
+		 
+		 
+		 dht_data_temp_h=(temp>>8);
+		 w_data_h[i]=data_to_dec(dht_data_temp_h);
+    10e8:	87 2d       	mov	r24, r7
+    10ea:	d8 da       	rcall	.-2640   	; 0x69c <data_to_dec>
+    10ec:	7c 01       	movw	r14, r24
+    10ee:	f6 01       	movw	r30, r12
+    10f0:	e3 5b       	subi	r30, 0xB3	; 179
+    10f2:	fd 4f       	sbci	r31, 0xFD	; 253
+    10f4:	91 83       	std	Z+1, r25	; 0x01
+    10f6:	80 83       	st	Z, r24
+		 dis_h=w_data_h[i];
+		 dis0_h=dis_h%10;
+		 dis1_h=dis_h/10;
+		 WriteChar(1,7,2,H);
+    10f8:	9e 01       	movw	r18, r28
+    10fa:	2c 5f       	subi	r18, 0xFC	; 252
+    10fc:	3f 4f       	sbci	r19, 0xFF	; 255
+    10fe:	42 e0       	ldi	r20, 0x02	; 2
+    1100:	50 e0       	ldi	r21, 0x00	; 0
+    1102:	67 e0       	ldi	r22, 0x07	; 7
+    1104:	81 e0       	ldi	r24, 0x01	; 1
+    1106:	e5 d8       	rcall	.-3638   	; 0x2d2 <WriteChar>
+		 
+		 
+		 dht_data_temp_h=(temp>>8);
+		 w_data_h[i]=data_to_dec(dht_data_temp_h);
+		 dis_h=w_data_h[i];
+		 dis0_h=dis_h%10;
+    1108:	97 01       	movw	r18, r14
+    110a:	ad ec       	ldi	r26, 0xCD	; 205
+    110c:	bc ec       	ldi	r27, 0xCC	; 204
+    110e:	3d d1       	rcall	.+634    	; 0x138a <__umulhisi3>
+    1110:	96 95       	lsr	r25
+    1112:	87 95       	ror	r24
+    1114:	96 95       	lsr	r25
+    1116:	87 95       	ror	r24
+    1118:	96 95       	lsr	r25
+    111a:	87 95       	ror	r24
+    111c:	9c 01       	movw	r18, r24
+    111e:	22 0f       	add	r18, r18
+    1120:	33 1f       	adc	r19, r19
+    1122:	88 0f       	add	r24, r24
+    1124:	99 1f       	adc	r25, r25
+    1126:	88 0f       	add	r24, r24
+    1128:	99 1f       	adc	r25, r25
+    112a:	88 0f       	add	r24, r24
+    112c:	99 1f       	adc	r25, r25
+    112e:	82 0f       	add	r24, r18
+    1130:	93 1f       	adc	r25, r19
+    1132:	a7 01       	movw	r20, r14
+    1134:	48 1b       	sub	r20, r24
+    1136:	59 0b       	sbc	r21, r25
+		 dis1_h=dis_h/10;
+		 WriteChar(1,7,2,H);
+		 WriteNum(1,9,dis0_h+48);
+    1138:	40 5d       	subi	r20, 0xD0	; 208
+    113a:	69 e0       	ldi	r22, 0x09	; 9
+    113c:	81 e0       	ldi	r24, 0x01	; 1
+    113e:	90 d8       	rcall	.-3808   	; 0x260 <WriteNum>
+		 
+		 dht_data_temp_h=(temp>>8);
+		 w_data_h[i]=data_to_dec(dht_data_temp_h);
+		 dis_h=w_data_h[i];
+		 dis0_h=dis_h%10;
+		 dis1_h=dis_h/10;
+    1140:	97 01       	movw	r18, r14
+    1142:	ad ec       	ldi	r26, 0xCD	; 205
+    1144:	bc ec       	ldi	r27, 0xCC	; 204
+    1146:	21 d1       	rcall	.+578    	; 0x138a <__umulhisi3>
+    1148:	96 95       	lsr	r25
+    114a:	87 95       	ror	r24
+    114c:	96 95       	lsr	r25
+    114e:	87 95       	ror	r24
+    1150:	96 95       	lsr	r25
+    1152:	87 95       	ror	r24
+		 WriteChar(1,7,2,H);
+		 WriteNum(1,9,dis0_h+48);
+		 WriteNum(1,10,dis1_h+48);
+    1154:	40 e3       	ldi	r20, 0x30	; 48
+    1156:	48 0f       	add	r20, r24
+    1158:	6a e0       	ldi	r22, 0x0A	; 10
+    115a:	81 e0       	ldi	r24, 0x01	; 1
+    115c:	81 d8       	rcall	.-3838   	; 0x260 <WriteNum>
+		 WriteNum(1,11,0x25);//显示湿度数据
+    115e:	45 e2       	ldi	r20, 0x25	; 37
+    1160:	6b e0       	ldi	r22, 0x0B	; 11
+    1162:	81 e0       	ldi	r24, 0x01	; 1
+    1164:	7d d8       	rcall	.-3846   	; 0x260 <WriteNum>
+		 
+		 
+		 
+		 adc_data=Collect_ADC_Data();
+    1166:	74 da       	rcall	.-2840   	; 0x650 <Collect_ADC_Data>
+    1168:	38 2e       	mov	r3, r24
+    116a:	e8 2f       	mov	r30, r24
+    116c:	f0 e0       	ldi	r31, 0x00	; 0
+		 w_data_adc_int[i]=(adc_data)/100;
+    116e:	9f 01       	movw	r18, r30
+    1170:	36 95       	lsr	r19
+    1172:	27 95       	ror	r18
+    1174:	36 95       	lsr	r19
+    1176:	27 95       	ror	r18
+    1178:	ab e7       	ldi	r26, 0x7B	; 123
+    117a:	b4 e1       	ldi	r27, 0x14	; 20
+    117c:	06 d1       	rcall	.+524    	; 0x138a <__umulhisi3>
+    117e:	ac 01       	movw	r20, r24
+    1180:	56 95       	lsr	r21
+    1182:	47 95       	ror	r20
+    1184:	98 01       	movw	r18, r16
+    1186:	21 5c       	subi	r18, 0xC1	; 193
+    1188:	3e 4f       	sbci	r19, 0xFE	; 254
+    118a:	39 01       	movw	r6, r18
+    118c:	d9 01       	movw	r26, r18
+    118e:	4c 93       	st	X, r20
+		 w_data_adc_sn1[i]=(adc_data-(w_data_adc_int[i]*100))/10;
+    1190:	6a 2d       	mov	r22, r10
+    1192:	64 03       	mulsu	r22, r20
+    1194:	90 01       	movw	r18, r0
+    1196:	11 24       	eor	r1, r1
+    1198:	2e 0f       	add	r18, r30
+    119a:	3f 1f       	adc	r19, r31
+    119c:	ad ec       	ldi	r26, 0xCD	; 205
+    119e:	bc ec       	ldi	r27, 0xCC	; 204
+    11a0:	f4 d0       	rcall	.+488    	; 0x138a <__umulhisi3>
+    11a2:	96 95       	lsr	r25
+    11a4:	87 95       	ror	r24
+    11a6:	96 95       	lsr	r25
+    11a8:	87 95       	ror	r24
+    11aa:	96 95       	lsr	r25
+    11ac:	87 95       	ror	r24
+    11ae:	d8 01       	movw	r26, r16
+    11b0:	ae 52       	subi	r26, 0x2E	; 46
+    11b2:	bb 4f       	sbci	r27, 0xFB	; 251
+    11b4:	6d 01       	movw	r12, r26
+    11b6:	8c 93       	st	X, r24
+		 w_data_adc_sn2[i]=adc_data-(w_data_adc_int[i]*100)-w_data_adc_sn1[i]*10; 
+    11b8:	f8 01       	movw	r30, r16
+    11ba:	ee 5a       	subi	r30, 0xAE	; 174
+    11bc:	fc 4f       	sbci	r31, 0xFC	; 252
+    11be:	7f 01       	movw	r14, r30
+    11c0:	a4 9e       	mul	r10, r20
+    11c2:	30 0c       	add	r3, r0
+    11c4:	11 24       	eor	r1, r1
+    11c6:	88 0f       	add	r24, r24
+    11c8:	98 2f       	mov	r25, r24
+    11ca:	99 0f       	add	r25, r25
+    11cc:	99 0f       	add	r25, r25
+    11ce:	89 0f       	add	r24, r25
+    11d0:	38 1a       	sub	r3, r24
+    11d2:	30 82       	st	Z, r3
+		 WriteChar(2,0,8,AI);
+    11d4:	9e 01       	movw	r18, r28
+    11d6:	29 5f       	subi	r18, 0xF9	; 249
+    11d8:	3f 4f       	sbci	r19, 0xFF	; 255
+    11da:	48 e0       	ldi	r20, 0x08	; 8
+    11dc:	50 e0       	ldi	r21, 0x00	; 0
+    11de:	60 e0       	ldi	r22, 0x00	; 0
+    11e0:	82 e0       	ldi	r24, 0x02	; 2
+    11e2:	77 d8       	rcall	.-3858   	; 0x2d2 <WriteChar>
+	     WriteNum(2,3,(w_data_adc_int[i]+48));
+    11e4:	d3 01       	movw	r26, r6
+    11e6:	4c 91       	ld	r20, X
+    11e8:	40 5d       	subi	r20, 0xD0	; 208
+    11ea:	63 e0       	ldi	r22, 0x03	; 3
+    11ec:	82 e0       	ldi	r24, 0x02	; 2
+    11ee:	38 d8       	rcall	.-3984   	; 0x260 <WriteNum>
+		 WriteNum(2,4,0X2E);
+    11f0:	4e e2       	ldi	r20, 0x2E	; 46
+    11f2:	64 e0       	ldi	r22, 0x04	; 4
+    11f4:	82 e0       	ldi	r24, 0x02	; 2
+    11f6:	34 d8       	rcall	.-3992   	; 0x260 <WriteNum>
+		 WriteNum(2,5,(w_data_adc_sn1[i]+48));
+    11f8:	f6 01       	movw	r30, r12
+    11fa:	40 81       	ld	r20, Z
+    11fc:	40 5d       	subi	r20, 0xD0	; 208
+    11fe:	65 e0       	ldi	r22, 0x05	; 5
+    1200:	82 e0       	ldi	r24, 0x02	; 2
+    1202:	2e d8       	rcall	.-4004   	; 0x260 <WriteNum>
+		 WriteNum(2,6,(w_data_adc_sn2[i]+48));   //显示ADC数据
+    1204:	d7 01       	movw	r26, r14
+    1206:	4c 91       	ld	r20, X
+    1208:	40 5d       	subi	r20, 0xD0	; 208
+    120a:	66 e0       	ldi	r22, 0x06	; 6
+    120c:	82 e0       	ldi	r24, 0x02	; 2
+    120e:	28 d8       	rcall	.-4016   	; 0x260 <WriteNum>
+		 
+		 w_data_button[i]=Collect_BUTTON_Data();
+    1210:	31 da       	rcall	.-2974   	; 0x674 <Collect_BUTTON_Data>
+    1212:	f8 01       	movw	r30, r16
+    1214:	ed 53       	subi	r30, 0x3D	; 61
+    1216:	fe 4f       	sbci	r31, 0xFE	; 254
+    1218:	7f 01       	movw	r14, r30
+    121a:	80 83       	st	Z, r24
+		 WriteChar(2,9,3,DI);
+    121c:	9e 01       	movw	r18, r28
+    121e:	20 5f       	subi	r18, 0xF0	; 240
+    1220:	3f 4f       	sbci	r19, 0xFF	; 255
+    1222:	43 e0       	ldi	r20, 0x03	; 3
+    1224:	50 e0       	ldi	r21, 0x00	; 0
+    1226:	69 e0       	ldi	r22, 0x09	; 9
+    1228:	82 e0       	ldi	r24, 0x02	; 2
+    122a:	53 d8       	rcall	.-3930   	; 0x2d2 <WriteChar>
+		 WriteNum(2,12,(w_data_button[i]+48)); //显示按钮数据
+    122c:	d7 01       	movw	r26, r14
+    122e:	4c 91       	ld	r20, X
+    1230:	40 5d       	subi	r20, 0xD0	; 208
+    1232:	6c e0       	ldi	r22, 0x0C	; 12
+    1234:	82 e0       	ldi	r24, 0x02	; 2
+    1236:	14 d8       	rcall	.-4056   	; 0x260 <WriteNum>
+		  
+	     PORTC=(~(0x01<<led));
+    1238:	c4 01       	movw	r24, r8
+    123a:	0b 2c       	mov	r0, r11
+    123c:	02 c0       	rjmp	.+4      	; 0x1242 <__stack+0x143>
+    123e:	88 0f       	add	r24, r24
+    1240:	99 1f       	adc	r25, r25
+    1242:	0a 94       	dec	r0
+    1244:	e2 f7       	brpl	.-8      	; 0x123e <__stack+0x13f>
+    1246:	80 95       	com	r24
+    1248:	85 bb       	out	0x15, r24	; 21
+	     led++;
+    124a:	b3 94       	inc	r11
+	     if(led==8) led=0;  //用跑马灯表示程序正在执行并正在读取数据
+    124c:	b8 e0       	ldi	r27, 0x08	; 8
+    124e:	bb 12       	cpse	r11, r27
+    1250:	01 c0       	rjmp	.+2      	; 0x1254 <__stack+0x155>
+    1252:	b1 2c       	mov	r11, r1
+    1254:	ef ef       	ldi	r30, 0xFF	; 255
+    1256:	f4 e3       	ldi	r31, 0x34	; 52
+    1258:	2c e0       	ldi	r18, 0x0C	; 12
+    125a:	e1 50       	subi	r30, 0x01	; 1
+    125c:	f0 40       	sbci	r31, 0x00	; 0
+    125e:	20 40       	sbci	r18, 0x00	; 0
+    1260:	e1 f7       	brne	.-8      	; 0x125a <__stack+0x15b>
+    1262:	00 c0       	rjmp	.+0      	; 0x1264 <__stack+0x165>
+    1264:	00 00       	nop
+		 _delay_ms(500);
+		 
+	    }
+		
+	   
+		 w_i=i;
+    1266:	10 93 48 02 	sts	0x0248, r17
+    126a:	00 93 47 02 	sts	0x0247, r16
+		
+	   
+	    i++;
+    126e:	0f 5f       	subi	r16, 0xFF	; 255
+    1270:	1f 4f       	sbci	r17, 0xFF	; 255
+		
+	   if(i==32)   //数据够一个数据块的收据后 写入SD卡
+    1272:	00 32       	cpi	r16, 0x20	; 32
+    1274:	11 05       	cpc	r17, r1
+    1276:	09 f0       	breq	.+2      	; 0x127a <__stack+0x17b>
+    1278:	3e c0       	rjmp	.+124    	; 0x12f6 <__stack+0x1f7>
+		{
+		 PORTC=SD_Write();
+    127a:	2e da       	rcall	.-2980   	; 0x6d8 <SD_Write>
+    127c:	85 bb       	out	0x15, r24	; 21
+		 if(SDHC==0)w_addr=w_addr+512;
+    127e:	80 91 51 03 	lds	r24, 0x0351
+    1282:	81 11       	cpse	r24, r1
+    1284:	14 c0       	rjmp	.+40     	; 0x12ae <__stack+0x1af>
+    1286:	80 91 49 02 	lds	r24, 0x0249
+    128a:	90 91 4a 02 	lds	r25, 0x024A
+    128e:	a0 91 4b 02 	lds	r26, 0x024B
+    1292:	b0 91 4c 02 	lds	r27, 0x024C
+    1296:	9e 5f       	subi	r25, 0xFE	; 254
+    1298:	af 4f       	sbci	r26, 0xFF	; 255
+    129a:	bf 4f       	sbci	r27, 0xFF	; 255
+    129c:	80 93 49 02 	sts	0x0249, r24
+    12a0:	90 93 4a 02 	sts	0x024A, r25
+    12a4:	a0 93 4b 02 	sts	0x024B, r26
+    12a8:	b0 93 4c 02 	sts	0x024C, r27
+    12ac:	15 c0       	rjmp	.+42     	; 0x12d8 <__stack+0x1d9>
+		 if(SDHC==1)w_addr=w_addr+1;
+    12ae:	81 30       	cpi	r24, 0x01	; 1
+    12b0:	99 f4       	brne	.+38     	; 0x12d8 <__stack+0x1d9>
+    12b2:	80 91 49 02 	lds	r24, 0x0249
+    12b6:	90 91 4a 02 	lds	r25, 0x024A
+    12ba:	a0 91 4b 02 	lds	r26, 0x024B
+    12be:	b0 91 4c 02 	lds	r27, 0x024C
+    12c2:	01 96       	adiw	r24, 0x01	; 1
+    12c4:	a1 1d       	adc	r26, r1
+    12c6:	b1 1d       	adc	r27, r1
+    12c8:	80 93 49 02 	sts	0x0249, r24
+    12cc:	90 93 4a 02 	sts	0x024A, r25
+    12d0:	a0 93 4b 02 	sts	0x024B, r26
+    12d4:	b0 93 4c 02 	sts	0x024C, r27
+    12d8:	3f ef       	ldi	r19, 0xFF	; 255
+    12da:	64 e3       	ldi	r22, 0x34	; 52
+    12dc:	8c e0       	ldi	r24, 0x0C	; 12
+    12de:	31 50       	subi	r19, 0x01	; 1
+    12e0:	60 40       	sbci	r22, 0x00	; 0
+    12e2:	80 40       	sbci	r24, 0x00	; 0
+    12e4:	e1 f7       	brne	.-8      	; 0x12de <__stack+0x1df>
+    12e6:	00 c0       	rjmp	.+0      	; 0x12e8 <__stack+0x1e9>
+    12e8:	00 00       	nop
+		 i=0;  
+		 _delay_ms(500);
+		 if(button_stop==1) break;  //如果中途按下按钮 跳出程序
+    12ea:	80 91 3c 01 	lds	r24, 0x013C
+    12ee:	81 30       	cpi	r24, 0x01	; 1
+    12f0:	49 f0       	breq	.+18     	; 0x1304 <__stack+0x205>
+	   if(i==32)   //数据够一个数据块的收据后 写入SD卡
+		{
+		 PORTC=SD_Write();
+		 if(SDHC==0)w_addr=w_addr+512;
+		 if(SDHC==1)w_addr=w_addr+1;
+		 i=0;  
+    12f2:	05 2d       	mov	r16, r5
+    12f4:	14 2d       	mov	r17, r4
+		 if(w_f==2) w_addr=File2Addr;
+		 if(w_f==3) w_addr=File3Addr;
+	 }
+	 TIMSK&= ~(1<<TOIE1);//关定时器中断
+	 LcdInit();  //清屏
+	 while(w_timeup==1)//计时结束 开始收集收据
+    12f6:	80 91 3d 01 	lds	r24, 0x013D
+    12fa:	90 91 3e 01 	lds	r25, 0x013E
+    12fe:	01 97       	sbiw	r24, 0x01	; 1
+    1300:	09 f4       	brne	.+2      	; 0x1304 <__stack+0x205>
+    1302:	a6 ce       	rjmp	.-692    	; 0x1050 <main+0x272>
+		}
+	  
+	  
+	  
+	}  
+		 WriteChar(1,0,16,cnm);
+    1304:	9e 01       	movw	r18, r28
+    1306:	2c 5e       	subi	r18, 0xEC	; 236
+    1308:	3f 4f       	sbci	r19, 0xFF	; 255
+    130a:	40 e1       	ldi	r20, 0x10	; 16
+    130c:	50 e0       	ldi	r21, 0x00	; 0
+    130e:	60 e0       	ldi	r22, 0x00	; 0
+    1310:	81 e0       	ldi	r24, 0x01	; 1
+    1312:	0e 94 69 01 	call	0x2d2	; 0x2d2 <WriteChar>
+		 WriteChar(2,0,16,clr);
+    1316:	9e 01       	movw	r18, r28
+    1318:	2b 5d       	subi	r18, 0xDB	; 219
+    131a:	3f 4f       	sbci	r19, 0xFF	; 255
+    131c:	40 e1       	ldi	r20, 0x10	; 16
+    131e:	50 e0       	ldi	r21, 0x00	; 0
+    1320:	60 e0       	ldi	r22, 0x00	; 0
+    1322:	82 e0       	ldi	r24, 0x02	; 2
+    1324:	0e 94 69 01 	call	0x2d2	; 0x2d2 <WriteChar>
+
+}
+    1328:	cf 5b       	subi	r28, 0xBF	; 191
+    132a:	df 4f       	sbci	r29, 0xFF	; 255
+    132c:	0f b6       	in	r0, 0x3f	; 63
+    132e:	f8 94       	cli
+    1330:	de bf       	out	0x3e, r29	; 62
+    1332:	0f be       	out	0x3f, r0	; 63
+    1334:	cd bf       	out	0x3d, r28	; 61
+    1336:	df 91       	pop	r29
+    1338:	cf 91       	pop	r28
+    133a:	1f 91       	pop	r17
+    133c:	0f 91       	pop	r16
+    133e:	ff 90       	pop	r15
+    1340:	ef 90       	pop	r14
+    1342:	df 90       	pop	r13
+    1344:	cf 90       	pop	r12
+    1346:	bf 90       	pop	r11
+    1348:	af 90       	pop	r10
+    134a:	9f 90       	pop	r9
+    134c:	8f 90       	pop	r8
+    134e:	7f 90       	pop	r7
+    1350:	6f 90       	pop	r6
+    1352:	5f 90       	pop	r5
+    1354:	4f 90       	pop	r4
+    1356:	3f 90       	pop	r3
+    1358:	08 95       	ret
+
+0000135a <__mulsi3>:
+    135a:	db 01       	movw	r26, r22
+    135c:	8f 93       	push	r24
+    135e:	9f 93       	push	r25
+    1360:	23 d0       	rcall	.+70     	; 0x13a8 <__muluhisi3>
+    1362:	bf 91       	pop	r27
+    1364:	af 91       	pop	r26
+    1366:	a2 9f       	mul	r26, r18
+    1368:	80 0d       	add	r24, r0
+    136a:	91 1d       	adc	r25, r1
+    136c:	a3 9f       	mul	r26, r19
+    136e:	90 0d       	add	r25, r0
+    1370:	b2 9f       	mul	r27, r18
+    1372:	90 0d       	add	r25, r0
+    1374:	11 24       	eor	r1, r1
+    1376:	08 95       	ret
+
+00001378 <__tablejump2__>:
+    1378:	ee 0f       	add	r30, r30
+    137a:	ff 1f       	adc	r31, r31
+    137c:	00 24       	eor	r0, r0
+    137e:	00 1c       	adc	r0, r0
+    1380:	0b be       	out	0x3b, r0	; 59
+    1382:	07 90       	elpm	r0, Z+
+    1384:	f6 91       	elpm	r31, Z
+    1386:	e0 2d       	mov	r30, r0
+    1388:	09 94       	ijmp
+
+0000138a <__umulhisi3>:
+    138a:	a2 9f       	mul	r26, r18
+    138c:	b0 01       	movw	r22, r0
+    138e:	b3 9f       	mul	r27, r19
+    1390:	c0 01       	movw	r24, r0
+    1392:	a3 9f       	mul	r26, r19
+    1394:	70 0d       	add	r23, r0
+    1396:	81 1d       	adc	r24, r1
+    1398:	11 24       	eor	r1, r1
+    139a:	91 1d       	adc	r25, r1
+    139c:	b2 9f       	mul	r27, r18
+    139e:	70 0d       	add	r23, r0
+    13a0:	81 1d       	adc	r24, r1
+    13a2:	11 24       	eor	r1, r1
+    13a4:	91 1d       	adc	r25, r1
+    13a6:	08 95       	ret
+
+000013a8 <__muluhisi3>:
+    13a8:	f0 df       	rcall	.-32     	; 0x138a <__umulhisi3>
+    13aa:	a5 9f       	mul	r26, r21
+    13ac:	90 0d       	add	r25, r0
+    13ae:	b4 9f       	mul	r27, r20
+    13b0:	90 0d       	add	r25, r0
+    13b2:	a4 9f       	mul	r26, r20
+    13b4:	80 0d       	add	r24, r0
+    13b6:	91 1d       	adc	r25, r1
+    13b8:	11 24       	eor	r1, r1
+    13ba:	08 95       	ret
+
+000013bc <_exit>:
+    13bc:	f8 94       	cli
+
+000013be <__stop_program>:
+    13be:	ff cf       	rjmp	.-2      	; 0x13be <__stop_program>
